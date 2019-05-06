@@ -1,0 +1,78 @@
+#Inubit
+#Solutions can be found on https://github.com/FabianFriedrich/Text2Process/tree/master/TestData/inubit/_Solutions
+
+#Ex 1 - ACME
+As a basic principle, ACME AG receives invoices on paper or fax. 
+These are received by the Secretariat in the central inbox and 
+forwarded after a short visual inspection to an accounting employee. 
+In "ACME Financial Accounting", a software specially developed for 
+the ACME AG, she identifies the charging suppliers and creates a new 
+instance (invoice). She then checks the invoice items and notes the 
+corresponding cost center at the ACME AG and the related cost center managers 
+for each position on a separate form ("docket").The docket and the copy of the 
+invoice go to the internal mail together and are sent to the first cost center 
+manager to the list. He reviews the content for accuracy after receiving the 
+copy of the invoice. Should everything be in order, he notes his code one on 
+the docket ("accurate position - AP") and returns the copy of the invoice to 
+the internal mail. From it, the copy of the invoice is passed on to the next 
+cost center manager, based on the docket, or if all items are marked correct, 
+sent back to accounting. Therefore, the copy of invoice and the docket gradually 
+move through the hands of all cost center managers until all positions are marked 
+as completely accurate. However, if inconsistencies exist, e.g. because the ordered 
+product is not of the expected quantity or quality, the cost center manager rejects 
+the AP with a note and explanatory statement on the docket, and the copy of the invoice is
+ sent back to accounting directly. Based on the statements of the cost center managers, she
+ will proceede with the clarification with the vendor, but, if necessary, she consults the
+ cost center managers by telephone or e-mail again. When all inconsistencies are resolved, 
+the copy of the invoice is sent to the cost center managers again, and the process continues.
+ After all invoice items are AP, the accounting employee forwards the copy of the invoice to 
+the commercial manager. He makes the commercial audit and issues the approval for payment. 
+If the bill amount exceeds EUR 20,000, the Board wants to check it again (4-eyes-principle). 
+The copy of the invoice including the docket moves back to the accounting employee in the 
+appropriate signature file. Should there be a complaint during the commercial audit, it will 
+be resolved by the accounting employee with the supplier. 
+After the commercial audit is successfully completed, the accounting employee gives payment 
+instructions and closes the instance in "ACME financial accounting".
+
+#Ex 2 - Powerlicht
+Every time we get a new order from the sales department, first, one of my masters 
+determines the necessary parts and quantities as well as the delivery date. 
+Once that information is present, it has to be entered into our production 
+planning system (PPS). 
+#That's a great thing, because we have worked years on it. 
+It optimizes our production processes and creates possibly uniform work 
+packages so that the setup times are minimized. Besides, it creates a list 
+of parts to be procured. Unfortunately it is not coupled correctly to our 
+Enterprise Resource Planning system (ERP), so the data must be transferred manually. 
+By the way, that is the second step. Once all the data is present, we need to decide 
+whether any parts are missing and must be procured or if this is not necessary. Once 
+production is scheduled to start, we receive a notice from the system and an employee 
+takes care of the implementation. 
+#In individual production, we have genuine all-rounders who can do a job completely. 
+#So we have a maximum staff variability. 
+Finally, the order will be checked again for its quality.
+
+#Ex 3 - Turbopixel
+The first step is to determine contact details of potential customers. 
+This can be achieved in several ways. 
+Sometimes, we buy details for cold calls, sometimes, our marketing staff participates 
+in exhibitions and sometimes,  you just happen to know somebody, who is interested in the product. 
+Then we start calling the customer. 
+That is done by the call center staff. 
+They are determining the contact person and the budget which would be available for the project. 
+Of course, asking the customer whether he is generally interested is also important. 
+If this is not the case, we leave him alone, except if the potential project budget is huge. 
+Then the head of development personally tries to acquire the customer. If the customer is 
+interested in the end, the next step is a detailed online presentation. It is given either by 
+a sales representative or by a pre-sales employee in case of a more technical presentation. `
+Afterwards we are waiting for the customer to come back to us. If we are not contacted within 
+2 weeks, a sales representative is calling the customer. The last phase is the creation of a quotation.
+
+#Ex 4 - Tutorial
+The process starts periodically on the first of each month, when Assembler AG places an order with 
+the supplier in order to request more product parts.
+a) 	Assembler AG sends the order to the supplier.
+b) 	The supplier processes the order.
+c) 	The supplier sends an invoice to Assembler AG.
+d) 	Assembler AG receives the invoice.
+
