@@ -1,7 +1,7 @@
 # Description2Process
 This repository includes all data as well as source code of the paper "On the Applicability of Deep Learning to construct Process Models from Natural Text". 
 
-The proposed methodology consists of an **NLP pipeline** that transforms a textual description into a process model in an XML format, which eventually can be mapped to a graph that is roughly based on BPMN. The NLP pipeline consists of 8 sequential steps:
+The proposed methodology consists of an **NLP pipeline** that transforms a textual description into a process model in an XML format, which eventually can be mapped to an image that is roughly based on BPMN. The NLP pipeline consists of 8 sequential steps:
 
 1. Contraction expansion
 2. Coreference resolution
