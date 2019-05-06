@@ -39,7 +39,7 @@ To start, first write a textual description yourself:
 ```
 description = "First, the customer purchases a product. Then, the customer receives an invoice. Finally, the customer pays the bill."
 ```
-Alternatively, one can let our data generation algorithm create a random one based on the 120 scenarios mentioned in the paper:
+Alternatively, one can let our data generation algorithm create a random description based on the 120 scenarios mentioned in the paper:
 ```
 from description2process import data_generation
 description_df = d2p.data_generation.get_descriptions(ndescriptions = 3, nscenario = 70, start = 0, data_frame = True)
