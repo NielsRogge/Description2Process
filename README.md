@@ -14,6 +14,12 @@ The proposed methodology consists of an **NLP pipeline** that transforms a textu
 
 Textual inputs are limited to sequences of activities and 3 types of XOR splits.
 
+## Installation 
+The project is based on Python 3. To install, simply do
+```
+pip install description2process
+```
+
 ## Usage 
 
 (...)
