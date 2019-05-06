@@ -1,0 +1,75 @@
+The party sends a warrant possession
+request asking a warrant to be released.
+The Client Service Back Office as part of the
+Small Claims Registry Operations receives
+the request and retrieves the SCT file. Then,
+the SCT Warrant Possession is forwarded to
+Queensland Police. The SCT physical file is
+stored by the Back Office awaiting a report to
+be sent by the Police. When the report is
+received, the respective SCT file is retrieved.
+Then, Back Office attaches the new SCT
+document, and stores the expanded SCT
+physical file. After that, some other MC
+internal staff receives the physical SCT file
+
+Each morning, the files which have yet to be processed need to be checked, to make sure they are in order for
+the court hearing that day. 
+If some files are missing, a search is initiated, otherwise the files can be physically tracked to the intended location. 
+Once all the files are ready, these are handed to the Associate, and meantime the Judge’s Lawlist is distributed to the relevant people.
+Afterwards, the directions hearings are conducted.
+
+After a claim is registered, it is examined by a claims officer. The claims officer then writes a “settlement recommendation”. 
+This recommendation is then checked by a senior claims officer who may mark the claim as “OK” or “Not OK”. 
+If the claim is marked as “Not OK”, it is sent back to the claims officer and the recommendation is repeated.
+If the claim is OK, the claim handling process proceeds.
+
+Mail from the party is collected on a daily basis by the Mail
+Processing Unit. Within this unit, the Mail Clerk sorts the unopened
+mail into the various business areas. The mail is then distributed.
+When the mail is received by the Registry, it is opened and sorted
+into groups for distribution, and thus registered in a manual
+incoming Mail Register. Afterwards, the Assistant Registry Manager
+within the Registry performs a quality check. If the mail is not
+compliant, a list of requisition explaining the reason for rejection is
+compiled and sent back to the party. Otherwise, the matter details
+(types of action) are captured and provided to the Cashier, who
+takes the applicable fees attached to the mail. At this point, the
+Assistant Registry Manager puts the receipt and copied documents
+into an envelope and posts it to the party. Meantime, the Cashier
+captures the Party Details and prints the Physical Court File.
+
+In the context of a claim handling process, it is sometimes necessary to send a questionnaire to the
+claimant to gather additional information. 
+The claimant is expected to return the questionnaire within five days. 
+If no response is received after five days, a reminder is sent to the claimant. 
+If after another five days there is still no response, another reminder is sent and so on until the completed questionnaire is received.
+
+When a claim is received, it is first checked whether the claimant
+is insured by the organization. If not, the claimant is informed that
+the claim must be rejected. Otherwise, the severity of the claim is
+evaluated. Based on the outcome (simple or complex claims),
+relevant forms are sent to the claimant. Once the forms are
+returned, they are checked for completeness. If the forms provide
+all relevant details, the claim is registered in the Claims
+Management system, which ends the Claims Notification process.
+Otherwise, the claimant is informed to update the forms. Upon
+reception of the updated forms, they are checked again.
+
+The Police Report related to the car accident is searched within
+the Police Report database and put in a file together with the
+Claim Documentation. This file serves as input to a claims
+handler who calculates an initial claim estimate. Then, the claims
+handler creates an Action Plan based on an Action Plan Checklist
+available in the Document Management system. Based on the
+Action Plan, a claims manager tries to negotiate a settlement on
+the claim estimate. The claimant is informed of the outcome,
+which ends the process.
+
+The process starts when a customer submits a claim by sending in relevant documentation. 
+The Notification department at the car insurer checks the documents upon completeness and 
+registers the claim. Then, the Handling department picks up the claim and checks the insurance. 
+Then, an assessment is performed. If the assessment is positive, a garage is phoned to authorise 
+the repairs and the payment is scheduled (in this order). Otherwise, the claim is rejected. 
+In any case (whether the outcome is positive or negative), a letter is sent to the customer 
+and the process is considered to be complete.
