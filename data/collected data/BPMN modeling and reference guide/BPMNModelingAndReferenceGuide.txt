@@ -1,1 +1,71 @@
+#BPMN Modeling and Reference Guide
+#Solutions are found on https://github.com/FabianFriedrich/Text2Process/tree/master/TestData/BPMN%20Modeling%20and%20reference%20guide/_solution 
 
+#Exercise 1
+Every weekday morning, the database is backed up and then it is checked to see whether
+the “Account Defaulter” table has new records. If no new records are found, then the
+process should check the CRM system to see whether new returns have been filed. If 
+new returns exist, then register all defaulting accounts and customers. If the defaulting
+client codes have not been previously advised, produce another table of defaulting accounts 
+and send to account management. All of this must be completed by 2:30 pm, if it is not, then 
+an alert should be sent to the supervisor. Once the new defaulting account report has been
+completed, check the CRM system to see whether new returns have been filed. If new returns 
+have been filed, reconcile with the existing account defaulters table. This must be 
+completed by 4:00 pm otherwise a supervisor should be sent a message.
+
+#Exercise 2
+The Customer Service Representative sends a Mortgage offer to the customer and waits for
+a reply. If the customer calls or writes back declining the mortgage, the case details are
+updated and the work is then archived prior to cancellation. If the customer sends back the
+completed offer documents and attaches all prerequisite documents then the case is moved
+to administration for completion. If all pre-requisite documents are not provided a message
+is generated to the customer requesting outstanding documents. If no answer is received
+after 2 weeks, the case details are updated prior to archive and cancellation.
+
+#Exercise 3a
+In November of each year, the Coordination Unit at the Town Planning Authority drafts a
+schedule of meetings for the next calendar year and adds draft dates to all calendars. The
+Support Officer then checks the dates and suggests modifications. The Coordination Unit
+then rechecks all dates and looks for potential conflicts. The final schedule of meeting dates
+is sent to all the independent Committee Members by email, who then check their diaries
+and advise the Coordination Unit of any conflicts.
+
+#Exercise 3b
+Once the dates are finalized (by the
+Coordination Unit), the Support Officer updates all group calendars and creates meeting
+folders for each meeting and ensures all appropriate documents are uploaded to system.
+Committee Members are advised a week before each meeting to read all related
+documents. The Committee Members hold their meeting, and the Support Office then
+produces minutes including any Action Points for each Committee Member. Within 5
+working days, the Coordination Unit must conduct a QA check on the minutes, which are
+then sent to all Committee Members. The Support Officer then updates all departmental
+records.
+
+#Exercise 4
+After the Expense Report is received, a new account must be created if the employee does
+not already have one. The report is then reviewed for automatic approval. Amounts under
+$200 are automatically approved, whereas amounts equal to or over $200 require approval
+of the supervisor.
+In case of rejection, the employee must receive a rejection notice by email. Otherwise, the
+reimbursement goes to the employee’s direct deposit bank account. If the request is not
+completed in 7 days, then the employee must receive an “approval in progress” email.
+If the request is not finished within 30 days, then the process is stopped and the employee
+receives an email cancellation notice and must re-submit the expense report.
+
+#Exercise 5
+After the Process starts, a Task is performed to locate and distribute any relevant existing
+designs, both electrical and physical. Next, the design of the electrical and physical systems
+starts in parallel. Any existing or previous Electrical and Physical Designs are inputs to both
+Activities. Development of either design is interrupted by a successful update of the other
+design. If interrupted, then all current work is stopped and that design must restart.
+In each department (Electrical Design and Physical Design), any existing designs are
+reviewed, resulting in an Update Plan for their respective designs (i.e. one in Electrical and
+another in Physical). Using the Update Plan and the existing Draft of the Electrical/Physical
+Design, a revised design is created. Once completed the revised design is tested. If the
+design fails the test, then it is sent back to the first Activity (in the department) to review
+and create a new Update Plan. If the design passes the test, then it tells the other
+department that they need to restart their work.
+When both of the designs have been revised, they are combined and tested. If the combined
+design fails the test, then they are both sent back to the beginning to initiate another design
+cycle. If the designs pass the test, then they are deemed complete and are then sent to the
+manufacturing Process [a separate Process].
