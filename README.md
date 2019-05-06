@@ -21,5 +21,16 @@ pip install description2process
 ```
 
 ## Usage 
+All steps of the pipeline are available as separate Python modules which one can test and use. 
 
-(...)
+```
+import description2process as d2p
+from description2process import contraction_expansion
+from description2process import coreference_resolution
+from description2process import clause_extraction
+from description2process import activity_recognition
+from description2process import activity_extraction
+from description2process import structured_description
+from description2process import xml_model
+from description2process import visualization
+```
