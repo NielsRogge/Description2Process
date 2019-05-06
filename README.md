@@ -1,7 +1,7 @@
 # Description2Process
 This repository includes all data as well as source code of the paper "On the Applicability of Deep Learning to construct Process Models from Natural Text". 
 
-The proposed methodology consists of an **NLP pipeline** that transforms a textual description into a process model in an XML format which eventually can be mapped to a graph that is roughly based on BPMN. The NLP pipeline consists of 8 sequential steps:
+The proposed methodology consists of an **NLP pipeline** that transforms a textual description into a process model in an XML format, which eventually can be mapped to a graph that is roughly based on BPMN. The NLP pipeline consists of 8 sequential steps:
 
 1. Contraction expansion
 2. Coreference resolution
@@ -15,7 +15,7 @@ The proposed methodology consists of an **NLP pipeline** that transforms a textu
 Textual inputs are limited to sequences of activities and 3 types of XOR splits.
 
 ## Installation 
-The project is based on Python 3. To install, simply do
+The project requires Python 3. To install, simply do
 ```
 pip install description2process
 ```
@@ -39,21 +39,22 @@ To start, first write a textual description yourself:
 ```
 description = "First, the customer purchases a product. Then, the customer receives an invoice. Finally, the customer pays the bill."
 ```
-Alternatively, our data generation algorithm can create one:
+Alternatively, one can let our data generation algorithm create a random one based on the 120 scenarios mentioned in the paper:
 ```
+from description2process import data_generation
 description_df = d2p.data_generation.get_descriptions(ndescriptions = 3, nscenario = 70, start = 0, data_frame = True)
 description_df.tail()
 ```
 
 ### Contraction expansion 
-Next, one can expand all contractions of the description, like "doesn't" and "isn't". This happens as follows:
+Next, one can expand all contractions of the description, like "doesn't" and "isn't" to "does not" and "is not". This happens as follows:
 ```
 description = d2p.contraction_expansion.expand_contractions(description)
 print(description)
 ```
 
 ### Coreference resolution 
-Subsequently, coreference resolution is performed, resolving references like "he", "she" and "it". This can be done as follows:
+Subsequently, coreference resolution can be performed, resolving references like "he", "she" and "it". This can be done as follows:
 ```
 description = d2p.coreference_resolution.resolve_coreferences(description)
 print(description)
