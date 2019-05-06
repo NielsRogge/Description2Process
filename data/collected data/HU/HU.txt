@@ -1,0 +1,58 @@
+#HU
+#Solutions can be found on https://github.com/FabianFriedrich/Text2Process/tree/master/TestData/HU/_Solutions 
+
+#Ex 1- bycicle manufacturing
+A small company manufactures customized bicycles. Whenever the sales department
+receives an order, a new process instance is created. A member of the sales department 
+can then reject or accept the order for a customized bike. In the former case, the process 
+instance is finished. In the latter case, the storehouse and the engineering department are
+informed. The storehouse immediately processes the part list of the order and checks the required
+quantity of each part. If the part is available in-house, it is reserved. If it is not available, 
+it is back-ordered. This procedure is repeated for each item on the part list. In the meantime, 
+the engineering department prepares everything for the assembling of the ordered bicycle. If the
+storehouse has successfully reserved or back-ordered every item of the part list and the preparation
+activity has finished, the engineering department assembles the bicycle. Afterwards, the sales 
+department ships the bicycle to the customer and finishes the process instance.
+
+#Ex2 - Computer Repair
+A customer brings in a defective computer and the CRS checks the defect and hands out a repair 
+cost calculation back. If the customer decides that the costs are acceptable, the process continues,
+otherwise she takes her computer home unrepaired. The ongoing repair consists of two activities, 
+which are executed, in an arbitrary order. The first activity is to check and repair the hardware, 
+whereas the second activity checks and configures the software. After each of these activities, the
+proper system functionality is tested. If an error is detected another arbitrary repair activity is 
+executed, otherwise the repair is finished.
+
+
+#Ex3 - Hotel Service
+The Evanstonian is an upscale independent hotel. When a guest calls room service at The 
+Evanstonian, the room-service manager takes down the order. She then submits an order ticket 
+to the kitchen to begin preparing the food. She also gives an order to the sommelier (i.e., the wine waiter) 
+to fetch wine from the cellar and to prepare any other alcoholic beverages. Eighty percent of 
+room-service orders include wine or some other alcoholic beverage. Finally, she assigns the order
+to the waiter. While the kitchen and the sommelier are doing their tasks, the waiter readies a 
+cart (i.e., puts a tablecloth on the cart and gathers silverware). The waiter is also responsible 
+for nonalcoholic drinks. Once the food, wine, and cart are ready, the waiter delivers it to the 
+guest’s room. After returning to the room-service station, the waiter debits the guest’s account. 
+The waiter may wait to do the billing if he has another order to prepare or deliver.
+
+
+#Ex 4 - Underwriters
+Whenever a company makes the decision to go public, its first task is to select the underwriters. Underwriters 
+act as financial midwives to a new issue. Usually they play a triple role: First they provide the company with
+procedural and financial advice, then they buy the issue, and finally they resell it to the public. 
+
+Established underwriters are careful of their reputation and will not handle a new issue unless they believe
+ the facts have been presented fairly. Thus, in addition to handling the sale of a company’s issue, the 
+underwriters in effect give their seal of approval to it.
+
+They prepare a registration statement for the approval of the Securities and Exchange Commission (SEC). 
+In addition to registering the issue with the SEC, they need to check that the issue complies with the so-called 
+blue-sky laws of each state that regulate sales of securities within the state. While the registration statement 
+is awaiting approval, underwriters begin to firm up the issue price. They arrange a road show to talk to potential 
+investors. Immediately after they receive clearance from the SEC, underwriters fix the issue price. After that 
+they enter into a firm commitment to buy the stock and then offer it to the public, when they haven’t still found
+ any reason not to do it.
+
+
+
