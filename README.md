@@ -35,7 +35,7 @@ from description2process import xml_model
 from description2process import visualization
 ```
 ### Create description
-To start, first write a textual description yourself: 
+To start, first enter a textual description yourself: 
 ```
 description = "First, the customer purchases a product. Then, the customer receives an invoice. Finally, the customer pays the bill."
 ```
