@@ -42,8 +42,8 @@ description = "First, the customer purchases a product. Then, the customer recei
 Alternatively, one can let our data generation algorithm create a random description based on the 120 scenarios mentioned in the paper:
 ```
 from description2process import data_generation
-description_df = d2p.data_generation.get_descriptions(ndescriptions = 3, nscenario = 70, start = 0, data_frame = True)
-description_df.tail()
+description = d2p.data_generation.get_description()
+print(description)
 ```
 
 ### Contraction expansion 
