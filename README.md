@@ -12,5 +12,8 @@ The proposed methodology consists of an **NLP pipeline** that transforms a textu
 7. Transformation of semi-structured description to XML format
 8. Visualization of XML format 
 
-Textual inputs are limited to sequences of activities and 3 types of XOR splits. 
+Textual inputs are limited to sequences of activities and 3 types of XOR splits.
 
+## Usage 
+
+(...)
