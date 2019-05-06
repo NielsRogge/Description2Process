@@ -1,0 +1,153 @@
+#Examples and exercises of chapter 3 of the BPMN book
+
+#Example 3.1: 
+This process starts whenever a purchase order has
+been received from a customer. The first activity that is carried out is confirming the
+order. Next, the shipment address is received so that the product can be shipped to
+the customer. Afterwards, the invoice is emitted and once the payment is received
+the order is archived, thus completing the process.
+
+#Example 3.2: 
+As soon as an invoice is received from a customer, it needs to be checked for mismatches.
+The check may result in either of these three options: i) there are no mismatches, in which
+case the invoice is posted; ii) there are mismatches but these can be corrected, in which
+case the invoice is re-sent to the customer; and iii) there are mismatches but these cannot
+be corrected, in which case the invoice is blocked. Once one of these three activities is
+performed the invoice is parked and the process completes.
+
+#Exercise 3.1:  
+Once a loan application has been approved by the loan provider, an acceptance pack is
+prepared and sent to the customer. The acceptance pack includes a repayment schedule
+which the customer needs to agree upon by sending the signed documents back to the loan
+provider. The latter then verifies the repayment agreement: if the applicant disagreed with
+the repayment schedule, the loan provider cancels the application; if the applicant agreed,
+the loan provider approves the application. In either case, the process completes with the
+loan provider notifying the applicant of the application status.
+
+#Example 3.3: 
+Once the boarding pass has been received, passengers proceed to the security check. Here
+they need to pass the personal security screening and the luggage screening. Afterwards,
+they can proceed to the departure level.
+
+#Exercise 3.2: 
+A loan application is approved if it passes two checks: (i) the applicant’s loan risk assessment,
+done automatically by a system, and (ii) the appraisal of the property for which the
+loan has been asked, carried out by a property appraiser. The risk assessment requires a
+credit history check on the applicant, which is performed by a financial officer. Once both
+the loan risk assessment and the property appraisal have been performed, a loan officer can
+assess the applicant’s eligibility. If the applicant is not eligible, the application is rejected,
+otherwise the acceptance pack is prepared and sent to the applicant.
+
+#Example. 3.5: 
+A company has two warehouses that store different products: Amsterdam and Hamburg.
+When an order is received, it is distributed across these warehouses: if some of the relevant
+products are maintained in Amsterdam, a sub-order is sent there; likewise, if some relevant
+products are maintained in Hamburg, a sub-order is sent there. Afterwards, the order is
+registered and the process completes.
+
+#Example 3.6:
+If the product requested is not in stock, it needs to bemanufactured before the order handling
+can continue. To manufacture a product, the required raw materials have to be ordered. Two
+preferred suppliers provide different types of raw material. Depending on the product to
+be manufactured, raw materials may be ordered from either Supplier 1 or Supplier 2, or
+from both. Once the raw materials are available, the product can be manufactured and the
+order can be confirmed. On the other hand, if the product is in stock, it is retrieved from the
+warehouse before confirming the order. Then the process continues normally.
+
+#Exercise 3.3: 
+A loan application may be coupled with a home insurance which is offered at discounted
+prices. The applicant may express their interest in a home insurance plan at the time of
+submitting their loan application to the loan provider. Based on this information, if the
+loan application is approved, the loan provider may either only send an acceptance pack
+to the applicant, or also send a home insurance quote. The process then continues with the
+verification of the repayment agreement.
+
+#Exercise 3.4: 
+Once a loan application is received by the loan provider, and before proceeding with its
+assessment, the application itself needs to be checked for completeness. If the application is
+incomplete, it is returned to the applicant, so that they can fill out the missing information
+and send it back to the loan provider. This process is repeated until the application is found
+complete.
+
+#Example 3.8:
+The order fulfillment process is carried out by a seller’s organization which includes two departments:
+the sales department and the warehouse & distribution department. The purchase
+order received by warehouse & distribution is checked against the stock. This operation is
+carried out automatically by the ERP system of warehouse & distribution, which queries
+the warehouse database. If the product is in stock, it is retrieved from the warehouse before
+sales confirm the order. Next sales emit an invoice and wait for the payment, while the
+product is shipped from within warehouse & distribution. The process completes with the
+order archival in the sales department. If the product is not in stock, the ERP system within
+warehouse & distribution checks the raw materials availability by accessing the suppliers
+catalog. Once the raw materials have been obtained the warehouse & distribution department
+takes care of manufacturing the product. The process completes with the purchase
+order being confirmed and archived by the sales department.
+
+#Exercise 3.6: 
+The process for assessing loan applications is executed by four roles within the loan
+provider: a financial officer takes care of checking the applicant’s credit history; a property
+appraiser is responsible for appraising the property; an insurance sales representative
+sends the home insurance quote to the applicant if this is required. All other activities are
+performed by the loan officer who is the main point of contact with the applicant.
+
+#Exercise 3.10:
+The process for handling downpayments starts when a request for payment has been approved.
+It involves entering the downpayment request into the system, the automatic subsequent
+payment, emission of the direct invoice and the clearance of the vendor line items.
+The clearing of the vendor line items can result in a debit or credit balance. In case of debit
+balance, the arrears are processed, otherwise the remaining balance is paid.
+
+#Exercise 3.11: 
+When a new credit request is received, the risk is assessed. If the risk is above a threshold,
+an advanced risk assessment needs to be carried out, otherwise a simple risk assessment will
+suffice. Once the assessment has been completed, the customer is notified with the result of
+the assessment and meantime the disbursement is organized. For simplicity, assume that the
+result of an assessment is always positive.
+
+#Exercise 3.12:
+After a claim is registered, it is examined by a claims officer who then writes a settlement
+recommendation. This recommendation is then checked by a senior claims officer who may
+mark the claim as “OK” or “Not OK”. If the claim is marked as “Not OK”, it is sent back
+to the claims officer and the recommendation is repeated. If the claim is “OK”, the claim
+handling process proceeds.
+
+#Exercise 3.13: 
+If a tenant is evicted because of damages to the premises, a process needs to be started by the
+tribunal in order to hold a hearing to assess the amount of compensation the tenant owes the
+owner of the premises. This process starts when a cashier of the tribunal receives a request
+for compensation from the owner. The cashier then retrieves the file for those particular
+premises and checks that both the request is acceptable for filing, and compliant with the
+description of the premises on file. Setting a hearing date incurs fees to the owner. It may be
+that the owner has already paid the fees with the request, in which case the cashier allocates
+a hearing date and the process completes. It may be that additional fees are required, but the
+owner has already paid also those fees. In this case the cashier generates a receipt for the
+additional fees and proceeds with allocating the hearing date. Finally, if the owner has not
+paid the required fees, the cashier produces a fees notice and waits for the owner to pay the
+fees before reassessing the document compliance.
+
+#Exercise 3.18: 
+In a court each morning the files that have yet to be processed are checked to make sure
+they are in order for the court hearing that day. If some files are missing a search is initiated,
+otherwise the files can be physically tracked to the intended location. Once all the files are
+ready, these are handed to the Associate; meantime the judge’s lawlist is distributed to the
+relevant people. Afterwards, the directions hearings are conducted.
+
+#Exercise 3.19  
+The motor claim handling process starts when a customer submits a claim with the relevant
+documentation. The notification department at the car insurer checks the documents upon
+completeness and registers the claim. Next, the Handling department picks up the claim
+and checks the insurance. Then, an assessment is performed. If the assessment is positive,
+a Garage is phoned to authorize the repairs and the payment is scheduled (in this order).
+Otherwise, the claim is rejected. In any case (whether the outcome is positive or negative),
+a letter is sent to the customer and the process is considered to be complete.
+
+#Exercise 3.20: 
+When a claim is received, a claims officer first checks if the claimant is insured. If not, the
+claimant is informed that the claim must be rejected by sending an automatic notification via
+an SAP system. Otherwise, a senior claims officer evaluates the severity of the claim. Based
+on the outcome (simple or complex claims), the relevant forms are sent to the claimant,
+again using the SAP system. Once the forms are returned, they are checked for completeness
+by the claims officer. If the forms provide all relevant details, the claim is registered in the
+claims management system, and the process ends. Otherwise, the claimant is informed to
+update the forms via the SAP system. Upon reception of the updated forms, they are checked
+again by the claims officer to see if the details have been provided, and so on.

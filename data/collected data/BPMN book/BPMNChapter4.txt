@@ -1,0 +1,340 @@
+#Example 4.2
+In a procurement process, a quote is to be obtained from all preferred
+suppliers. After all quotes are received, they are evaluated and the best quote is
+selected. A corresponding purchase order is then placed.
+
+#Exercise 4.4
+After a car accident, a statement is sought from two witnesses out of the five that were
+present, in order to lodge the insurance claim. As soon as the first two statements are received,
+the claim can be lodged with the insurance company without waiting for the other
+statements.
+
+#Exercise 4.5
+A typical army recruitment process starts by shortlisting all candidates’ applications. Those
+shortlisted are then called to sit the following tests: drug and alcohol, eye, color vision,
+hearing, blood, urine, weight, fingerprinting and doctor examination. The color vision can
+only be done after the eye test, while the doctor examination can only be done after color
+vision, hearing, blood, urine and weight have been tested. Moreover, it may be required
+for some candidates to repeat some of these tests multiple times in order to get a correct
+assessment, e.g. the blood test may need to be repeated if the candidate has taken too much
+sugar in the previous 24 hours. The candidates that pass all tests are asked to sit a mental
+exam and a physical exam, followed by an interview. Only those that also pass these two
+exams and perform well in the interview can be recruited in the army.
+
+#Example 4.3
+In a small claims tribunal, callovers occur once a month, to set down the matter for the
+upcoming trials. The process for setting up a callover starts three weeks prior to the callover
+day, with the preparation of the callover list containing information such as contact details of
+the involved parties and estimated hearing date. One week prior to the callover, the involved
+parties are contacted to determine if they are all ready to go to trial. If this is the case, the
+callover is set, otherwise it is deferred to the next available slot. Finally, on the callover day,
+the callover material is prepared and the callover is held.
+
+#Exercise 4.7
+The ISP sends an invoice by email to the customer on the first working day of each month
+(Day 1). On Day 7, the customer has the full outstanding amount automatically debited
+from their bank account. If an automatic transaction fails for any reason, the customer
+is notified on Day 8. On Day 9, the transaction that failed on Day 7 is re-attempted. If
+it fails again, on Day 10 a late fee is charged to the customer’s bank account. At this
+stage, the automatic payment is no longer attempted. On Day 14, the Internet service is
+suspended until payment is received. If on Day 30 the payment is still outstanding, the
+account is closed and a disconnection fee is applied. A debt-recovery procedure is then
+started.
+
+#Exercise 4.8
+A restaurant chain submits a purchase order (PO) to replenish its warehouses every Thursday.
+The restaurant chain’s procurement system expects to receive either a “PO Response”
+or an error message. However, it may also happen that no response is received at all due to
+system errors or due to delays in handling the PO on the supplier’s side. If no response is
+received by Friday afternoon or if an error message is received, a purchasing officer at the
+restaurant chain’s headquarters should be notified. Otherwise, the PO Response is processed
+normally.
+
+#Exercise 4.11
+The routine for logging into an Internet bank account starts once the credentials entered
+from the user have been retrieved. First, the username is validated. If the username is not
+valid, the routine is interrupted and the invalid username is logged. If the username is valid,
+the number of password trials is set to zero. Then the password is validated. If this is not
+valid, the counter for the number of trials is incremented and if lower than three, the user
+is asked to enter the password again, this time together with a CAPTCHA test to increase
+the security level. If the number of failed attempts reaches three times, the routine is interrupted
+and the account is frozen. Moreover, the username and password validation may
+be interrupted should the validation server not be available. Similarly, the server to test the
+CAPTCHA may not be available at the time of log in. In these cases, the procedure is interrupted
+after notifying the user to try again later. At any time during the log in routine, the
+customer may close the web-page, resulting in the interruption of the routine.
+
+#Exercise 4.12
+Once a wholesale order has been confirmed, the supplier transmits this order to the carrier
+for the preparation of the transportation quote. In order to prepare the quote, the carrier
+needs to compute the route plan (including all track points that need to be traversed
+during the travel) and estimate the trailer usage (e.g. whether it is a full track-load, half
+track-load or a single package). By contract, wholesale orders have to be dispatched within
+four days from the receipt of the order. This implies that transportation quotes have to be
+prepared within 48 hours from the receipt of the order to remain within the terms of the
+contract.
+
+#Exercise 4.13
+An applicant who has decided not to combine their loan with a home insurance plan may
+change theirmind any time before the eligibility assessment has been completed. If a request
+for adding an insurance plan is received during this period, the loan provider will simply
+update the loan application with this request.
+
+#Exercise 4.14
+After an Expense report is received from an employee, the employee is notified of the
+receipt of the report. Next, a new account must be created if the employee does not already
+have one. The report is then reviewed for automatic approval. Amounts under €1,000 are
+automatically approved while amounts equal to or over €1,000 require manual approval.
+In case of rejection, the employee must receive a Rejection notice by email. In case of
+approval, the reimbursement is deposited directly to the employee’s bank account. At any
+time during the review, the employee can send a Request for amount rectification. In that
+case the rectification is registered and the report needs to be reviewed again. Moreover, if
+the report is not handled within 30 days, the process is stopped and the employee receives
+a Cancelation notice email so that he can re-submit the expense report from scratch.
+
+#Exercise 4.15
+If the report is not handled within 30 days, the process is stopped, the employee receives a
+cancellation notice email and must re-submit the expense report. However, if the reimbursement
+for the employee’s expenses had already been made, a money recall needs to be made,
+to get the money back from the employee, before sending the cancellation notice email.
+
+#Exercise 4.16
+In a stock exchange, stock price variations are continuously monitored during the day. A day
+starts when the opening bell rings and concludes when the closing bell rings. Between the
+two bells, every time the stock price changes by more than 10 %, the entity of the change is
+first determined. Next, if the change is high, a “high stock price” alert is sent, otherwise a
+“low stock price” alert is sent.
+
+#Exercise 4.18
+The mortgage application process starts with the receipt of a mortgage application from a
+client. When an application is sent in by the client to the broker, the broker may either deal
+with the application themselves, if the amount of the mortgage loan is within the mandate
+the broker has been given by BestLoans, or forward the application to BestLoans. If the
+broker deals with the application themselves, this results in either a rejection or an approval
+letter being sent back to the client. If the broker sends an approval letter, then it forwards the
+details of this application to BestLoans so that from there on the client can interact directly
+with BestLoans for the sake of disbursing the loan. In this case, BestLoans registers the
+application and sends an acknowledgment to the client.
+The broker can only handle a given number of clients at a time. If the broker is not able to
+reply within one week, the client must contact BestLoans directly. In this case, a reduction
+on the interest rate is applied should the application be approved.
+If BestLoans deals with the application directly, its mortgage department checks the credit
+of the client with the Bureau of Credit Registration. Moreover, if the loan amount is more
+than 90 % of the total cost of the house being purchased by the client, the mortgage department
+must request a mortgage insurance offer from the insurance department. After these
+interactions BestLoans either sends an approval letter or a rejection to the broker, which the
+broker then forwards to the client (this interaction may also happen directly between the
+mortgage department and the client if no broker is involved).
+After an approval letter has been submitted to the client, the client may either accept or reject
+the offer by notifying this directly to the mortgage department. If the mortgage department
+receives an acceptance notification, it writes a deed and sends it to an external notary for
+signature. The notary sends a copy of the signed deed to the mortgage department. Next, the
+insurance department starts an insurance contract for the mortgage. Finally, the mortgage
+department submits a disbursement request to the financial department. When this request
+has been handled, the financial department notifies the client directly.
+Any time during the application process, the client may inquire about the status of their
+application with the mortgage department or with the broker, depending on which entity is
+dealing with the client. Moreover, the client may request the cancellation of the application.
+In this case the mortgage department or the broker computes the application processing
+fees, which depend on how far the application process is, and communicates these to the
+client. The client may reply within two days with a cancellation confirmation, in which
+case the process is canceled, or with a cancellation withdrawal, in which case the process
+continues. If the process has to be canceled, BestLoans may need to first recall the loan (if
+the disbursement has been done), then annul the insurance contract (if an insurance contract
+has been drawn) and finally annul the deed (if a deed has been drawn).
+
+#Exercise 4.22
+Mail from the party is collected on a daily basis by the mail processing unit. Within this
+unit, the mail clerk sorts the unopened mail into the various business areas. The mail is then
+distributed. When the mail is received by the registry, it is opened and sorted into groups for
+distribution, and thus registered in a mail register. Afterwards, the assistant registry manager
+within the registry performs a quality check. If the mail is not compliant, a list of requisitions
+explaining the reasons for rejection is compiled and sent back to the party. Otherwise,
+the matter details are captured and provided to the cashier, who takes the applicable fees
+attached to the mail. At this point, the assistant registry manager puts the receipt and copied
+documents into an envelope and posts it to the party. Meantime, the cashier captures the
+party details and prints the physical court file.
+
+#Exercise 4.23
+September: nomination forms are sent out. The Nobel committee sends out confidential
+forms to around 3,000 people—selected professors at universities around the world, Nobel
+laureates in physics and chemistry, and members of the Royal Swedish Academy of
+Sciences, among others.
+February: deadline for submission. The completed nomination forms must reach the Nobel
+Committee no later than 31 January of the following year. The committee screens the
+nominations and selects the preliminary candidates. About 250–350 names are nominated
+as several nominators often submit the same name.
+March–May: consultation with experts. The Nobel committee sends the list of the preliminary
+candidates to specially appointed experts for their assessment of the work of the
+candidates.
+June–August: writing of the report. The Nobel committee puts together the report with
+recommendations to be submitted to the Academy. The report is signed by all members of
+the committee.
+September: committee submits recommendations. The Nobel committee submits its report
+with recommendations on the final candidates to the members of the Academy. The report
+is discussed at two meetings of the chemistry section of the Academy.
+October: Nobel laureates are chosen. In early October, the Academy selects the Nobel laureates
+in chemistry through a majority vote. The decision is final and without appeal. The
+names of the Nobel laureates are then announced.
+December: Nobel laureates receive their prize. The Nobel prize award ceremony takes place
+on 10 December in Stockholm, where the Nobel laureates receive their Nobel prize, which
+consists of a Nobel medal and diploma, and a document confirming the prize amount.
+
+#Exercise 4.26
+Any time after the first transaction has failed, the customer may pay the invoice directly to
+the ISP. If so, the billing process is interrupted and the payment is registered. This direct
+payment must also cover the late fees, based on the number of days passed since Day 7 (the
+last day to avoid incurring late fees). If the direct payment does not include late fees, the
+ISP sends a notification to the customer that the fees will be charged in the next invoice,
+before concluding the process.
+
+#Exercise 4.28
+After a supplier notifies a retailer of the approval of a purchase order, the supplier can either
+receive an order confirmation, an order change or an order cancellation from the retailer. It
+may happen that no response is received at all. If no response is received after 48 hours, or if
+an order cancellation is received, the supplier will cancel the order. If an order confirmation
+is received within 48 hours, the supplier will process the order normally. If an order change
+is received within 48 hours, the supplier will update the order and ask again the retailer for
+confirmation. The retailer is allowed to change an order at most three times. Afterwards, the
+supplier will automatically cancel the order.
+
+#Exercise 4.30
+When a claim is received, it is first registered. After registration, the claim is classified
+leading to two possible outcomes: simple or complex. If the claim is simple, the insurance
+policy is checked. For complex claims, both the policy and the damage are checked independently.
+A possible outcome of the policy check is that the claim is invalid. In this case,
+any processing is canceled and a letter is sent to the customer. In the case of a complex
+claim, this implies that the damage checking is canceled if it has not been completed yet.
+After the check(s), an assessment is performed which may lead to two possible outcomes:
+positive or negative. If the assessment is positive, the garage is phoned to authorize the
+repairs and the payment is scheduled (in this order). In any case (whether the outcome is
+positive or negative), a letter is sent to the customer and the process ends. At any moment
+after the registration and before the end of the process, the customer may call to modify the
+details of the claim. If a modification occurs before the payment is scheduled, the claim is
+classified again (simple or complex) and the process is repeated. If a request to modify the
+claim is received after the payment is scheduled, the request is rejected.
+
+#Exercise 4.31
+An order handling process starts when an order is received. The order is first registered.
+If the current date is not a working day, the process waits until the following working day
+before proceeding. Otherwise, an availability check is performed and a purchase order response
+is sent back to the customer. If any item is not available, any processing related to
+the order must be stopped. Thereafter, the client needs to be notified that the purchase order
+cannot be further processed. Anytime during the process, the customer may send a purchase
+order cancel request. When such a request is received, the purchase order handling process
+is interrupted and the cancellation is processed. The customer may also send a “Customer
+address change request” during the order handling process. When such a request is received,
+it is just registered, without further action.
+
+#Exercise 4.33
+The Smart Electronic Development Assessment System (Smart eDA) is a Queensland Government
+initiative aimed to provide an intuitive service for preparing, lodging and assessing
+land development applications. The land development business process starts with the
+receipt of a land development application from an applicant. Upon the receipt of a land
+development application, the assessment manager interacts with the cadastre to retrieve geographical
+information on the designated development area. This information is used to
+get an initial validation of the development proposal from the city council. If the plan is
+valid, the assessment manager sends the applicant a quote of the costs that will incur to
+process the application. These costs depend on the type of development plan (for residential
+or commercial purposes), and on the permit/license that will be required for the plan to be
+approved. If the applicant accepts the quote, the assessment can start.
+The assessment consists of a detailed analysis of the development plan. First, the assessment
+manager interacts with the Department of Main Roads (DMR) to check for conflicts with
+planned road development works. If there are conflicts, the application cannot proceed and
+must be rejected. In this case, the applicant is notified by the assessment manager. The
+applicant may wish to modify the development plan and re-submit it for assessment. In this
+case, the process is resumed from where it was interrupted.
+If the development plan includes modifications to the natural environment, the assessment
+manager needs to request a land alteration permit to the Department of Natural Resources
+and Water (NRW). If the plan is for commercial purposes, additional fees will be applied
+to obtain this permit. Once the permit is granted, this is sent by NRW directly to the applicant.
+Likewise, if the designated development area is regulated by special environment
+protection laws, the assessment manager needs to request an environmental license to the
+Environmental Protection Agency (EPA). Similarly, once the license is granted, this is sent
+by EPA directly to the applicant. Once the required permit and/or license have been obtained,
+the assessment manager notifies the Applicant of the final approval.
+At any time during this process, the applicant can track the progress of their application by
+interacting directly with the assessment manager.
+Assessment manager, cadastre, DMR, NRW and EPA are all Queensland Government entities.
+In particular, NRW and EPA are part of the Department of Environment and Resource
+Management within the Queensland Government.
+
+#Exercise 4.34
+The ordering business process starts with the receipt of a request for work order from a
+customer. Upon the receipt of this request, the ordering department of Sparks estimates
+the expected usage of supplies, parts and labor and prepares a quote with the estimated
+total cost for the maintenance activity. If the customer’s vehicle is insured, the ordering
+department interacts with the insurance department to retrieve the details of the customer’s
+insurance plan so that these can be attached to the quote. The ordering department then
+sends the quote to the customer, who can either accept or reject the quote by notifying
+the ordering department within five days. If the customer accepts the quote, the ordering
+department contacts the warehouse department to check if the required parts are in stock
+before scheduling an appointment with the customer. If some parts are not in stock, the
+ordering department orders the required parts by interacting with a certified reseller and
+waits for an order confirmation from the reseller, to be received within three days. If it is
+not received, the order department orders the parts again from a second reseller. If no reply
+is received from the second reseller too, the order department notifies the customer that the
+parts are not available and the process terminates. If the required parts are in stock or have
+been ordered, the ordering department interacts with an external garage to book a suitably
+equipped service bay and a suitably qualified mechanic to perform the work. A confirmation
+of the appointment is then sent by the garage to the order department which forwards the
+confirmation to the customer. The customer has one week to pay Sparks, otherwise the
+ordering department cancels the work order by sending a cancellation notice to both the
+service bay and the mechanic that have been booked for this order. If the customer pays in
+time, the work order is performed.
+
+#Exercise 4.35
+A build-to-order (BTO) process, also known as make-to-order process, is an “order-to-cash”
+process where the products to be sold are manufactured on the basis of a confirmed purchase
+order. In other words, the manufacturer does not maintain any ready-to-ship products in their
+stock. Instead, the products are manufactured on demand when the customer orders them.
+This approach is used in the context of customized products, such as metallurgical products,
+where customers often submit orders for products with very specific requirements.
+We consider a BTO process at a company called MetalWorks. The process starts when
+MetalWorks receives a purchase order (PO) from one of its customers. This PO is called the
+“customer PO”. The customer PO may contain one or multiple line items. Each line item
+refers to a different product.
+Upon receiving a customer PO, a sales officer checks the PO to determine if all the line
+items in the order can be produced within the timeframes indicated in the PO. As a result
+of this check, the sales officer may either confirm the customer PO or ask the customer
+to revise the terms of the PO (for example: change the delivery date to a later date). In
+some extreme cases, the sales officer may reject the PO, but this happens very rarely. If
+the customer is asked to revise the PO, the BTO process will be put in “stand-by” until the
+customer submits a revised PO. The sales officer will then check the revised PO and either
+accept it, reject it, or ask again the customer to make further changes.
+Once a PO is confirmed, the sales officer creates one “work order” for each line item in the
+customer PO. In other words, one customer PO gives place to multiple work orders (one
+per line item). The work order is a document that allows employees at MetalWorks to keep
+track of the manufacturing of a product requested by a customer. In order to manufacture a product, 
+multiple raw materials are typically required. Some of these raw materials are maintained in stock 
+in the warehouse ofMetalWorks, but others need to be sourced from one or multiple suppliers. Accordingly, 
+each work order is examined by a production engineer. The production engineer determines which raw materials 
+are requiredin order to fulfill the work order. The production engineer annotates the work order with a
+list of required raw materials. Each raw material listed in the work order is later checked
+by a procurement officer. The procurement officer determines whether the required raw
+material is available in stock, or it has to be ordered. If the material has to be ordered, the
+procurement officer selects a suitable supplier for the raw material and sends a PO to the
+selected supplier. This “PO for a raw material” is called a “material PO”, and it is different
+from the customer PO. A material PO is a PO sent by MetalWorks to one of its suppliers,
+whereas a customer PO is a PO received by MetalWorks from one of its customers.
+Once all materials required to fulfill a work order are available, the production can start.
+The responsibility for the production of a work order is assigned to the same production
+engineer who previously examined the work order. The production engineer is responsible
+for scheduling the production. Once the product has been manufactured, it is checked by a
+quality inspector. Sometimes, the quality inspector finds a defect in the product and reports
+it to the production engineer. The production engineer then decides whether: (i) the product
+should undergo a minor fix; or (ii) the product should be discarded and manufactured again.
+Once the production has completed, the product is shipped to the customer. There is no need
+to wait until all the line items requested in a customer PO are ready before shipping them.
+As soon as a product is ready, it can be shipped to the corresponding customer.
+At any point in time (before the shipment of the product), the customer may send a “cancel
+order” message for a given PO. When this happens, the sales officer determines if the order
+can still be canceled, and if so, whether or not the customer should pay a penalty. If the
+order can be canceled without penalty, all the work related to that order is stopped and the
+customer is notified that the cancellation has been successful. If the customer needs to pay a
+penalty, the sales officer first asks the customer if they accept to pay the cancellation penalty.
+If the customer accepts to pay the cancellation penalty, the order is canceled and all work
+related to the order is stopped. Otherwise, the work related to the order continues.
+
+
+

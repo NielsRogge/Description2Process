@@ -1,0 +1,184 @@
+#Chapter 1 BPMN book
+
+#Exercise 1.1
+In order to apply for admission, students first fill in an online form. Online applications are
+recorded in an information system to which all staff members involved in the admissions
+process have access to. After a student has submitted the online form, a PDF document is
+generated and the student is requested to download it, sign it, and send it by post together
+with the required documents, which include:
+• Certified copies of previous degree and academic transcripts.
+• Results of English language test.
+• Curriculum vitae.
+When these documents are received by the admissions office, an officer checks the completeness
+of the documents. If any document is missing, an e-mail is sent to the student. The
+student has to send the missing documents by post. Assuming the application is complete,
+the admissions office sends the certified copies of the degrees to an academic recognition
+agency, which checks the degrees and gives an assessment of their validity and equivalence
+in terms of local education standards. This agency requires that all documents be sent to
+it by post, and all documents must be certified copies of the originals. The agency sends
+back its assessment to the university by post as well. Assuming the degree verification is
+successful, the English language test results are then checked online by an officer at the
+admissions office. If the validity of the English language test results cannot be verified, the
+application is rejected (such notifications of rejection are sent by e-mail).
+Once all documents of a given student have been validated, the admission office forwards
+these documents by internal mail to the corresponding academic committee responsible for
+deciding whether to offer admission or not. The committee makes its decision based on
+the academic transcripts and the CV. The committee meets once every 2 to 3 weeks and
+examines all applications that are ready for academic assessment at the time of the meeting.
+At the end of the committee meeting, the chair of the committee notifies the admissions
+office of the selection outcomes. This notification includes a list of admitted and rejected
+candidates. A few days later, the admission office notifies the outcome to each candidate
+via e-mail. Additionally, successful candidates are sent a confirmation letter by post.
+
+#Exercise 1.6
+Customers drop off their prescriptions either in the drive-through counter or in the front
+counter of the pharmacy. Customers can request that their prescription be filled immediately.
+In this case, they have to wait between 15 minutes and one hour depending on the current
+workload. Most customers are not willing to wait that long, so they opt to nominate a pickup
+time at a later point during the day. Generally, customers drop their prescriptions in the
+morning before going to work (or at lunchtime) and they come back to pick up the drugs
+after work, typically between 5pm and 6pm.When dropping their prescription, a technician
+asks the customer for the pick-up time and puts the prescription in a box labeled with the
+hour preceding the pick-up time. For example, if the customer asks to have the prescription
+be ready at 5pm, the technician will drop it in the box with the label 4pm (there is one box
+for each hour of the day).
+Every hour, one of the pharmacy technicians picks up the prescriptions due to be filled in the
+current hour. The technician then enters the details of each prescription (e.g. doctor details,
+patient details and medication details) into the pharmacy system. As soon as the details of
+a prescription are entered, the pharmacy system performs an automated check called Drug
+Utilization Review (DUR). This check is meant to determine if the prescription contains
+any drugs that may be incompatible with other drugs that had been dispensed to the same
+customer in the past, or drugs that may be inappropriate for the customer taking into account
+the customer data maintained in the system (e.g. age).
+Any alarms raised during the automated DUR are reviewed by a pharmacist who performs a
+more thorough check. In some cases, the pharmacist even has to call the doctor who issued
+the prescription in order to confirm it.
+After the DUR, the system performs an insurance check in order to determine whether
+the customer’s insurance policy will pay for part or for the whole cost of the drugs. In
+most cases, the output of this check is that the insurance company would pay for a certain
+percentage of the costs, while the customer has to pay for the remaining part (also called
+the co-payment). The rules for determining how much the insurance company will pay and
+how much the customer has to pay are very complicated. Every insurance company has
+different rules. In some cases, the insurance policy does not cover one or several drugs in a
+prescription, but the drug in question can be replaced by another drug that is covered by the
+insurance policy. When such cases are detected, the pharmacist generally calls the doctor
+and/or the patient to determine if it is possible to perform the drug replacement.
+Once the prescription passes the insurance check, it is assigned to a technician who collects
+the drugs from the shelves and puts them in a bag with the prescription stapled to it. After
+the technician has filled a given prescription, the bag is passed to the pharmacist who
+double-checks that the prescription has been filled correctly. After this quality check, the
+pharmacist seals the bag and puts it in the pick-up area. When a customer arrives to pick up
+a prescription, a technician retrieves the prescription and asks the customer for payment in
+case the drugs in the prescription are not (fully) covered by the customer’s insurance.
+
+#Exercise 1.7
+A purchase request is initiated when an employee at the company fills in and signs a form
+on paper. The purchase request includes information about the good to be purchased, the
+quantity, the desired delivery date, the approximate cost. The employee can also nominate
+a specific vendor. Employees often request quotes from vendors in order to get the required
+information. Completing the entire form can take a few days as the requestor often does
+not have the required data. The quote is attached to the purchase request. This completed
+request is signed by two supervisors. One supervisor has to provide a financial approval,
+while the other supervisor has to approve the necessity of the purchase and its conformance
+with company’s policy (e.g. does a requested software form part of the standard operating
+environment?). Collecting the signatures from the two supervisors takes on average five
+days. If it is urgent, the employee can hand-deliver the form, otherwise it is circulated via
+internal mail. A rejected purchase request is returned to the employee. Some employees
+make some minor modifications and try in a second attempt other supervisors in order to
+get approval.
+Once a purchase request is approved, it is returned to the employee who initiated the purchase
+requisition. The employee then forwards the form to the Purchasing Department.
+Many employees make a copy of the form for their own record, in case the form gets lost.
+The central purchasing Department checks the completeness of the purchase request and
+returns it to the employee if it is incomplete.
+Based on attached quotes and other information, the purchasing Department enters the approved
+purchase request into the company’s Enterprise System. If the employee has not
+nominated any vendors, a clerk at the purchasing Department will select one based either
+on the quotes attached to the purchase requisition, or based on the list of vendors (also called
+Master Vendor List) available in the company’s Enterprise System.
+Sometimes the initial quote attached to the request has expired in the meantime. In this
+case, updated quote is requested from the corresponding vendor. In other cases, the vendor
+who submitted the quote is not recorded in the company’s Enterprise System. In this case,
+the purchasing Department should give preference to other vendors who are registered in
+the Enterprise System. If no such vendors are available or if the registered vendors offer
+higher prices than the one in the submitted quote, the purchasing Department can add the
+new vendor into the Enterprise System.
+When a vendor is selected, a purchase order is automatically generated by the Enterprise
+System. Then, a fax is generated and sent to the vendor. A copy of the purchase order is
+sent to Accounts Payable Office, which is part of the Financial Department, which uses an
+accounting system that is not integrated with the Enterprise System.
+The goods are always delivered to the Goods Receipt Department.When a good is received,
+a clerk at this Department selects the corresponding purchase order in the Enterprise System.
+The clerk checks the quantity and quality and (in the positive case) generates a document
+called goods receipt form from the purchase order stored in the Enterprise System. The
+goods are then forwarded to the employee who initiated the purchase requisition. A printout
+of the goods receipt form is sent to the Accounts Payable Office. If there are any issues
+with the good, it is returned to the vendor and a paper-based note is sent to the Purchasing
+Department and to the Accounts Payable Office.
+The vendor eventually sends the invoice directly to the Accounts Payable Office. A clerk
+at this office compares the purchase order, the goods receipt and the invoice—a task that is
+usually called “three-way matching”. Three-way matching can be quite time-consuming. If
+there are any discrepancies as it has to be investigated, if it was an error of the vendor or
+a data entry error. The duration of the payment process unfortunately takes sometimes so
+long that the discount for paying in a certain period expires.
+A bank transfer is finally triggered and a payment notice is sent to the vendor. Some vendors
+explicitly indicate in their invoice the bank account number where they want the transfer
+to occur. It may happen that the bank account number and name indicated in the invoice
+differs from the one recorded in the vendor database. Sometimes payments bounce back, in
+which case the vendor is contacted by phone, e-mail or postal mail. If new bank details are
+given, the transfer is attempted again. If the issue is still not resolved, the Accounts Payable
+Office has to contact again the vendor in order to trace the cause of the bounced payment.
+
+#Exercise 2.8
+A university provides education and services to its students. This starts
+with admission of students to the university. When a regular student, i.e. a student
+who comes from a Dutch high-school, sends in his admission form such a student is
+registered by the admissions office. Subsequently, the eligibility to study in a certain
+program is checked based on the information that the student provided on his admission
+form. For students who arrive from another school, such as a polytechnic,
+the previous study that the student took, according to his admission form, must be
+examined in detail. Polytechnic students can either come to the university after completing
+one year of courses (propedeuse) or after receiving a polytechnic diploma.
+Students from universities in other countries are also accepted. Also for them, the
+studies that they took previously must be examined in detail. When students are
+considered eligible and the courses that they have already followed (if applicable)
+check out, they are enrolled at the university, which involves sending a letter that
+they are accepted and entering the details of their enrollment in the information system
+of the university. The students then become a student of their respective study:
+industrial engineering, building or construction engineering.
+After the students are enrolled, they can take courses or do projects and they can
+use the services that are provided by the university, which include: language training
+and sports facilities. Projects are done on an individual basis by a student together
+with a lecturer. The university recognizes part-time students who do their studies
+while they are working in a company. These students typically do projects of a more
+practical nature than the other students, such that the process that is followed during
+the project are also different for these students.
+
+#Exercise 2.9
+A consultancy firm provides consultancy, outsourcing, and interim
+management services. The firm considers acquisition of projects as part of those
+services. Acquisition can both be done for existing clients and for new clients, because
+it concerns acquisition of projects rather than clients. Acquisition is typically
+started at ‘networking events’ by partners of the consultancy firm. It is handled
+according to a fixed procedure, but no standard document is used. When a client
+shows interest in a consultancy service, an intake is done with the client. To maintain
+a long-term relationship with clients as much as possible, the firm will always
+try to establish a framework contract with new clients during the intake. For existing
+clients a framework contract does not have to be established. As another form
+of relationship management, regular meetings are held with existing clients. During
+these meetings the client’s organization is discussed with the client. This enables
+the client to decide whether additional work should be done to further improve the
+organization. At the same time this enables the firm to bring in additional assignments.
+The intake and the regular meetings happen according to the same form, on
+which an inventory of the client’s wishes can be made.
+For consultancy and outsourcing services, a project team must be created directly
+after a project assignment was given to the consultancy firm. After a project team is
+created, there is a kick-off meeting with the client and after the kick-off meeting, the
+project is executed. The kick-off meeting is the same for each type of project, but
+the way in which the project is executed differs largely per type of service. At the
+end of the project there always is an evaluation meeting with the client as a means of
+quality control. The creation of the project team, the kick-off meeting, the execution
+of the project and the evaluation of the project happen according to a project plan.
+The consultancy company has a services department, which takes care of market
+research for the consultants, manages the leasing of cars and provides secretary
+services.
