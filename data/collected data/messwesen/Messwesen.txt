@@ -1,0 +1,155 @@
+#Solutions can be found on https://github.com/FabianFriedrich/Text2Process/tree/master/TestData/Messwesen/_Solutions
+
+\\mac\home\documents\test\B2 - eng.txt
+************************************************************************
+#Translated version of B2  http://translate.google.com/#de|en| .
+
+The MPON sents the dismissal to the MPOO.
+The MPOO reviews the dismissal.
+The MPOO opposes the dismissal of MPON or
+the MPOO confirmes the dismissal of the MPON.
+
+
+\\mac\home\documents\test\B3 - eng.txt
+************************************************************************
+#Translated version of 33 - gertxt  http://translate.google.com/#de|en| .
+
+The MPON reports the meter operation to the GO.
+
+The GO examines the application of the MPON.
+
+The GO rejects the application of the MPON or the GO confirmes the application of the MPON.
+
+The GO informs the MPOO about the registration confirmation of the MPON.
+
+The GO informs the MSPO about the registration confirmation of the MPON.
+
+The MPON and the MPOO perform the equipment acquisition and/or equipment changes.
+
+The MPON informs the GO about the failure of the entire process or the MPON informs the GO about the successful completion of the entire process.
+
+The GO informs the MPON about the failure of the overall transaction by deadline if after a maximum time limit no message of the MPON is present at the GO.
+
+If the MPON informs the GO about the failure of the entire process, the GO confirms the failure of the assignment to the MPON. 
+
+If the MPON informs the GO about the successful completion of the overall process, the GO assigns the MPON. 
+The GO confirms the assignment to the MPON.
+
+The GO informs the MPOO about the failure of the assignment of the MPON or the GO informs the MPOO about the assignment of the MPON.
+
+The GO informs the MSPO about the failure of the assignment of the MPON or the GO informs the MSPO about the assignment of the MPON.
+
+The GO informs the SP about the assignment of the MPON.
+
+
+\\mac\home\documents\test\B4 - eng.txt
+************************************************************************
+The MPOO deregisters at the GO.
+The GO verifies the deregistration.
+The GO rejects the deregistration of the MPOO or 
+the GO preliminarily confirms the deregistration of the MPOO.
+The GO prepares the readmission of the measuring point.
+Optionally, the GO may oblige the MPOO to continue the operations.
+If the GO binds the MPOO to continue the operation, the MPOO confirmes the continuation to the MPOO.
+The GO performs the equipment acquisition and/or equipment changes.
+The GO assigns the GO as MPO.
+The GO informs the MPOO about the end of the assignment of the MPOO and the beginning of the assignment of the GO.
+The GO informs the MSPO about the assignment of the GO.
+The GO informs the SP about the assignment of the GO.
+
+
+
+
+\\mac\home\documents\test\B5.1 - eng .txt
+************************************************************************
+The MPON notifies the MPOO about equipment change intentions.
+The MPOO announces self dismounting to the MPON or
+the MPOO shall notify the MPON about no self-dismounting of the MPOO.
+The MPON or the MPOO perform the final reading.
+The MPON or the MPOO dismount the old equipment.
+The MPON mounts the new device.
+The MPON reads the meter count from the installed meter.
+The MPON sents the values of the final reading to the GO.
+The MPON tells the GO about the device changes, the master data and the meter count at installation.
+The GO shall notify the MSP about the device changes, the master data, the meter count at dismounting, and the meter count at installation.
+
+
+\\mac\home\documents\test\B5.2 - eng.txt
+************************************************************************
+The MPON requests a device takeover bid of the MPOO.The MPOO sends a tender for the equipment takeover to the MPON.The MPON places an order at the MPOO.The MPOO confirms the order of the MPON and sends the master data.
+
+
+\\mac\home\documents\test\B6 - eng.txt
+************************************************************************
+The MSPN sents a dismissal to the MSPO.The MSPO reviews the dismissal.The MSPO rejects the dismissal of the MSPN orThe MSPO confirms the dismissal of the MSPN.
+
+
+\\mac\home\documents\test\B7 - eng.txt
+************************************************************************
+The MSPN registers the measurement at the GO.The GO examines the application of the MSPN.The GO rejects the application of the MSPN orthe GO confirmes the application of the MSPN.The GO assigns the MSPN.The GO informs the MSPO about the assignment of MSPN.The GO informs the MPO about the assignment of the MSPN.The GO informs the SP about the assignment of MSPN.
+
+
+\\mac\home\documents\test\B8 - eng.txt
+************************************************************************
+The MSPO deregisters at the GO.
+The GO verifies the deregistration.
+The GO rejects the deregistration of the MSPO or the GO preliminarily confirms the deregistration of the MSPO.
+The GO assigns himself as MSP.
+The GO informs the MSPO about the end of the assignment and the beginning of the assignment of the GO.
+The GO informs the MPO about the assignment of the GO.
+The GO informs the SP about the assignment of the GO.
+
+
+\\mac\home\documents\test\C1 - eng.txt
+************************************************************************
+The SP/PU/GO request changes of the MPO or the MPO himself causes a change.
+The MPO reviews the change request.
+The MPO rejects the change of the measuring point by the SP/PU/GO or the MPO confirmes the request of the SP/PU/GO.
+The MPO performs the measuring point change.
+The MPO reports the implementation to the SP/PU/GO or notifies the SP/PU/GO about the failure of the changes.
+
+
+\\mac\home\documents\test\C2 - eng.txt
+************************************************************************
+The fault detector reports a failure to the MPO or MPO has a suspicion of their own fault.
+The MPO shall examine the failure.
+The MPO rejects the failure of the fault detector or the MPO confirms the failure of the fault detector.
+If the MPO confirms the failure of the fault detector, he informes the GO and the MSP.
+The MPO fixes the fault at the measuring device.
+The MPO shares the results of the repairs carried out with the fault detector.
+The MPO will inform the GO about the resolution of the interference.
+The MPO will inform the MSP about the resolution of the interference.
+
+
+\\mac\home\documents\test\C3 - eng.txt
+************************************************************************
+The GO requests the measurements of the MSP.
+The MSP checks the received request.
+The MSP denies the request of the GO or the MSP performs the measurement.
+The MSP informs the GO about the failure of the reading or the MSP transmits the measured values to the GO.
+The GO processes the measured values.
+The GO sents the changed values to the MSP.
+The GO transmit the readings to the SP.
+
+
+\\mac\home\documents\test\D1 - eng.txt
+************************************************************************
+The EC tells the INQ about the change of his master data.
+The INQ notifies the IP of the change.
+The IP checks whether the master data can be changed at the desired time.
+The IP confirmes the changes of the INQ or the IP rejectes the changes of the INQ.
+
+
+\\mac\home\documents\test\D2 - eng.txt
+************************************************************************
+The INQ transmits the transaction data request to the IP.
+The IP checks the request of the INQ.
+The IP answers the question of the INQ depending on the outcome of the examination, i.e. Transmission of data or rejection.
+
+
+
+\\mac\home\documents\test\D3 - eng.txt
+************************************************************************
+If the MPOO sends the bill for the temporary continuation of the metering point operations to the GO, the GO examines the bill.If the MSPO sends the bill for the temporary continuation of the measurement to the GO, the GO examines the bill.If the MSPO sends the bill for additional readings to the GO, the GO examines the bill.If the MPOO sends the bill for the equipment acquisition to the MPON or the GO, the MPON or the GO examines the bill.The GO or the MPON confirms the invoice with payment advice to the MPOO or the MSPO, orthe GO or the MPON rejects the invoice of the MPOO or the MSPO.
+
+
