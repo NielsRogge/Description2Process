@@ -37,7 +37,7 @@ from description2process import visualization
 ### Create description
 To start, first enter a textual description yourself: 
 ```
-description = "First, the customer purchases a product. Then, the customer receives an invoice. Finally, the customer pays the bill."
+description = "First the secretary clarifies the shipment method. Whenever there's a requirement for large amounts, he selects one of three logistic companies. Whenever small amounts are required, a package label is written by the secretary. Subsequently the goods can be packaged by the warehousemen. If everything is ready, the packaged goods are prepared for being picked up by the logistic company."
 ```
 Alternatively, one can let our data generation algorithm create a random description based on the 120 scenarios mentioned in the paper:
 ```
