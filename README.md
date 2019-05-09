@@ -12,7 +12,7 @@ The proposed methodology consists of an **NLP pipeline** that transforms a textu
 7. Transformation of semi-structured description to XML format
 8. Visualization of XML format 
 
-Textual inputs are limited to sequences of activities and 3 types of XOR splits, as described in the paper.
+Textual inputs are limited to sequences of activities and 2 types of XOR splits, as described in the paper.
 
 ## Installation 
 The project requires Python 3. To install, simply do
