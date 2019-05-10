@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="htpp://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_1">
+    <bpmn:participant id="Participant_0" name="MPON" processRef="Pool_0"/>
+    <bpmn:participant id="Participant_1" name="MPOO" processRef="Pool_1"/>
+    <bpmn:messageFlow id="MessageFlow_0" sourceRef="EndMessageEvent_0" targetRef="Task_3"/>
+    <bpmn:messageFlow id="MessageFlow_1" sourceRef="Task_2" targetRef="Task_1"/>
+    <bpmn:messageFlow id="MessageFlow_2" sourceRef="Task_0" targetRef="StartMessageEvent_0"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Pool_0" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0" name="">
+        <bpmn:flowNodeRef>StartNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndMessageEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Task_1" targetRef="EndMessageEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="StartMessageEvent_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Task_3" targetRef="EndNoneEvent_0"/>
+    <bpmn:startEvent name="" id="StartNoneEvent_0">
+      <bpmn:outgoing>SequenceFlow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Request a device takeover bid" id="Task_0">
+      <bpmn:incoming>SequenceFlow_0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Order" id="Task_1">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndMessageEvent_0">
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_1" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_1" name="">
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>StartMessageEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Task_1" targetRef="EndMessageEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="StartMessageEvent_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Task_3" targetRef="EndNoneEvent_0"/>
+    <bpmn:task name="Tender the equipment takeover" id="Task_2">
+      <bpmn:incoming>SequenceFlow_3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Confirm order and transmission of master data" id="Task_3">
+      <bpmn:incoming>SequenceFlow_4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_0">
+      <bpmn:incoming>SequenceFlow_5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:startEvent name="" id="StartMessageEvent_0">
+      <bpmn:outgoing>SequenceFlow_3</bpmn:outgoing>
+    </bpmn:startEvent>
+  </bpmn:process>
+</bpmn:definitions>

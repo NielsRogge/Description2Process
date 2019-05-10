@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="htpp://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_1">
+    <bpmn:participant id="Participant_0" name="Town Planning Authority" processRef="Pool_0"/>
+    <bpmn:participant id="Participant_1" name="Committee Members" processRef="Pool_1"/>
+    <bpmn:messageFlow id="MessageFlow_0" sourceRef="IntermediateMessageEventThrowing_2" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_1" sourceRef="IntermediateMessageEventThrowing_1" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:messageFlow id="MessageFlow_2" sourceRef="IntermediateMessageEventThrowing_0" targetRef="StartMessageEvent_0"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Pool_0" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0" name="Support Officer">
+        <bpmn:flowNodeRef>Task_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_1" name="Coordination Unit">
+        <bpmn:flowNodeRef>StartTimerEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Task_2" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_3" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="Task_0" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_1" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="IntermediateMessageEventCatching_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_5" targetRef="IntermediateMessageEventThrowing_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="IntermediateMessageEventThrowing_2" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="IntermediateMessageEventCatching_0" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartTimerEvent_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="StartMessageEvent_0" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Task_4" targetRef="IntermediateMessageEventThrowing_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="IntermediateMessageEventThrowing_1" targetRef="EndNoneEvent_0"/>
+    <bpmn:task name="Check and suggest updates" id="Task_0">
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent name="November" id="StartTimerEvent_0">
+      <bpmn:outgoing>SequenceFlow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Draft dates" id="Task_1">
+      <bpmn:incoming>SequenceFlow_0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Enter into next years calendar" id="Task_2">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Finalize calendar schedule" id="Task_3">
+      <bpmn:incoming>SequenceFlow_3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateThrowEvent name="Send schedule to members" id="IntermediateMessageEventThrowing_0">
+      <bpmn:incoming>SequenceFlow_4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_5</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:intermediateCatchEvent name="Receive  schedule conflicts" id="IntermediateMessageEventCatching_0">
+      <bpmn:incoming>SequenceFlow_5</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_6</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task name="Update group calendars" id="Task_4">
+      <bpmn:incoming>SequenceFlow_6</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateThrowEvent name="Send final schedule to  members" id="IntermediateMessageEventThrowing_1">
+      <bpmn:incoming>SequenceFlow_7</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_8</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:endEvent name="" id="EndNoneEvent_0">
+      <bpmn:incoming>SequenceFlow_8</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_1" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_2" name="">
+        <bpmn:flowNodeRef>StartMessageEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Task_2" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_3" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="Task_0" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_1" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="IntermediateMessageEventCatching_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_5" targetRef="IntermediateMessageEventThrowing_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="IntermediateMessageEventThrowing_2" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="IntermediateMessageEventCatching_0" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartTimerEvent_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="StartMessageEvent_0" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Task_4" targetRef="IntermediateMessageEventThrowing_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="IntermediateMessageEventThrowing_1" targetRef="EndNoneEvent_0"/>
+    <bpmn:startEvent name="Receive  meeting schedule" id="StartMessageEvent_0">
+      <bpmn:outgoing>SequenceFlow_9</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Check for conflicts" id="Task_5">
+      <bpmn:incoming>SequenceFlow_9</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateThrowEvent name="Advise  schedule conflicts" id="IntermediateMessageEventThrowing_2">
+      <bpmn:incoming>SequenceFlow_10</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_11</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:intermediateCatchEvent name="Receive  final schedule" id="IntermediateMessageEventCatching_1">
+      <bpmn:incoming>SequenceFlow_11</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_12</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent name="" id="EndNoneEvent_1">
+      <bpmn:incoming>SequenceFlow_12</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+</bpmn:definitions>

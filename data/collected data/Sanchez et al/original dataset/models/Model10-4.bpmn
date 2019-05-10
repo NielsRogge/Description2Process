@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="htpp://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_1">
+    <bpmn:participant id="Participant_0" name="MPON" processRef="Pool_0"/>
+    <bpmn:participant id="Participant_1" name="MPOO" processRef="Pool_1"/>
+    <bpmn:participant id="Participant_2" name="GO" processRef="Pool_2"/>
+    <bpmn:messageFlow id="MessageFlow_0" sourceRef="Task_0" targetRef="StartMessageEvent_0"/>
+    <bpmn:messageFlow id="MessageFlow_1" sourceRef="Task_4" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_2" sourceRef="Task_3" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_3" sourceRef="IntermediateMessageEventThrowing_1" targetRef="Task_2"/>
+    <bpmn:messageFlow id="MessageFlow_4" sourceRef="EndMessageEvent_0" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:messageFlow id="MessageFlow_5" sourceRef="Task_8" targetRef="StartMessageEvent_1"/>
+    <bpmn:messageFlow id="MessageFlow_6" sourceRef="EndMessageEvent_1" targetRef="IntermediateMessageEventCatching_2"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Pool_0" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0" name="">
+        <bpmn:flowNodeRef>StartNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndMessageEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_19" sourceRef="Task_7" targetRef="Task_8"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="Exclusive_Databased_Gateway_1" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_16" sourceRef="IntermediateMessageEventCatching_1" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_20" sourceRef="Task_8" targetRef="Task_9"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_3" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="Exclusive_Databased_Gateway_2" targetRef="IntermediateMessageEventThrowing_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_17" sourceRef="Exclusive_Databased_Gateway_3" targetRef="Task_6"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="StartMessageEvent_0" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_4" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="IntermediateMessageEventThrowing_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_14" sourceRef="Exclusive_Databased_Gateway_2" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_24" sourceRef="Task_10" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_21" sourceRef="Task_9" targetRef="EndMessageEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_15" sourceRef="Task_5" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="Task_1" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_23" sourceRef="IntermediateMessageEventCatching_2" targetRef="Task_10"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="IntermediateMessageEventCatching_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_22" sourceRef="StartMessageEvent_1" targetRef="IntermediateMessageEventCatching_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Task_2" targetRef="EndMessageEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_18" sourceRef="Task_6" targetRef="Task_7"/>
+    <bpmn:sequenceFlow id="SequenceFlow_13" sourceRef="IntermediateMessageEventThrowing_1" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:startEvent name="" id="StartNoneEvent_0">
+      <bpmn:outgoing>SequenceFlow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Notify about equipment change intentions" id="Task_0">
+      <bpmn:incoming>SequenceFlow_0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Conduct final reading" id="Task_1">
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Dismount old equipment" id="Task_2">
+      <bpmn:incoming>SequenceFlow_4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_0">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:intermediateThrowEvent name="" id="IntermediateMessageEventThrowing_0">
+      <bpmn:incoming>SequenceFlow_3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_4</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:endEvent name="" id="EndMessageEvent_0">
+      <bpmn:incoming>SequenceFlow_5</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_1" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_1" name="">
+        <bpmn:flowNodeRef>StartMessageEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndMessageEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_19" sourceRef="Task_7" targetRef="Task_8"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="Exclusive_Databased_Gateway_1" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_16" sourceRef="IntermediateMessageEventCatching_1" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_20" sourceRef="Task_8" targetRef="Task_9"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_3" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="Exclusive_Databased_Gateway_2" targetRef="IntermediateMessageEventThrowing_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_17" sourceRef="Exclusive_Databased_Gateway_3" targetRef="Task_6"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="StartMessageEvent_0" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_4" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="IntermediateMessageEventThrowing_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_14" sourceRef="Exclusive_Databased_Gateway_2" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_24" sourceRef="Task_10" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_21" sourceRef="Task_9" targetRef="EndMessageEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_15" sourceRef="Task_5" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="Task_1" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_23" sourceRef="IntermediateMessageEventCatching_2" targetRef="Task_10"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="IntermediateMessageEventCatching_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_22" sourceRef="StartMessageEvent_1" targetRef="IntermediateMessageEventCatching_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Task_2" targetRef="EndMessageEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_18" sourceRef="Task_6" targetRef="Task_7"/>
+    <bpmn:sequenceFlow id="SequenceFlow_13" sourceRef="IntermediateMessageEventThrowing_1" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:startEvent name="" id="StartMessageEvent_0">
+      <bpmn:outgoing>SequenceFlow_6</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_0">
+      <bpmn:incoming>SequenceFlow_6</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_7</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_8</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Notify about self-dismounting" id="Task_3">
+      <bpmn:incoming>SequenceFlow_7</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Notify about no self-dismounting" id="Task_4">
+      <bpmn:incoming>SequenceFlow_8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_1">
+      <bpmn:incoming>SequenceFlow_9</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_10</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_11</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_2">
+      <bpmn:incoming>SequenceFlow_11</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_12</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_14</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateThrowEvent name="" id="IntermediateMessageEventThrowing_1">
+      <bpmn:incoming>SequenceFlow_12</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_13</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_1">
+      <bpmn:incoming>SequenceFlow_13</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_16</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task name="Conduct final reading" id="Task_5">
+      <bpmn:incoming>SequenceFlow_14</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_15</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_3">
+      <bpmn:incoming>SequenceFlow_16</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_15</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_17</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Mount new device" id="Task_6">
+      <bpmn:incoming>SequenceFlow_17</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_18</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Read meter count at installation" id="Task_7">
+      <bpmn:incoming>SequenceFlow_18</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_19</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Send values of final reading" id="Task_8">
+      <bpmn:incoming>SequenceFlow_19</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_20</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Notify about the device change, the meter data and the meter count at installation" id="Task_9">
+      <bpmn:incoming>SequenceFlow_20</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_21</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndMessageEvent_1">
+      <bpmn:incoming>SequenceFlow_21</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_2" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_2" name="">
+        <bpmn:flowNodeRef>StartMessageEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_10</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_19" sourceRef="Task_7" targetRef="Task_8"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="Exclusive_Databased_Gateway_1" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_16" sourceRef="IntermediateMessageEventCatching_1" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_20" sourceRef="Task_8" targetRef="Task_9"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_3" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="Exclusive_Databased_Gateway_2" targetRef="IntermediateMessageEventThrowing_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_17" sourceRef="Exclusive_Databased_Gateway_3" targetRef="Task_6"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="StartMessageEvent_0" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_4" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="IntermediateMessageEventThrowing_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_14" sourceRef="Exclusive_Databased_Gateway_2" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_24" sourceRef="Task_10" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_21" sourceRef="Task_9" targetRef="EndMessageEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_15" sourceRef="Task_5" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="Task_1" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_23" sourceRef="IntermediateMessageEventCatching_2" targetRef="Task_10"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="IntermediateMessageEventCatching_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_22" sourceRef="StartMessageEvent_1" targetRef="IntermediateMessageEventCatching_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Task_2" targetRef="EndMessageEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_18" sourceRef="Task_6" targetRef="Task_7"/>
+    <bpmn:sequenceFlow id="SequenceFlow_13" sourceRef="IntermediateMessageEventThrowing_1" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:startEvent name="" id="StartMessageEvent_1">
+      <bpmn:outgoing>SequenceFlow_22</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_2">
+      <bpmn:incoming>SequenceFlow_22</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_23</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task name="Notify about the device change,  the meter data, the meter count at dismounting, and the meter count at installation" id="Task_10">
+      <bpmn:incoming>SequenceFlow_23</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_24</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_0">
+      <bpmn:incoming>SequenceFlow_24</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+</bpmn:definitions>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="htpp://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_1">
+    <bpmn:participant id="Participant_0" name="MSPO" processRef="Pool_0"/>
+    <bpmn:participant id="Participant_1" name="GO" processRef="Pool_1"/>
+    <bpmn:messageFlow id="MessageFlow_0" sourceRef="IntermediateMessageEventThrowing_0" targetRef="StartMessageEvent_0"/>
+    <bpmn:messageFlow id="MessageFlow_1" sourceRef="Task_1" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_2" sourceRef="Task_2" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_3" sourceRef="Task_4" targetRef="IntermediateMessageEventCatching_0"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Pool_0" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0" name="">
+        <bpmn:flowNodeRef>StartNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="IntermediateMessageEventCatching_0" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_4" targetRef="EndNoneEvent_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="Task_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="StartMessageEvent_0" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="Task_3" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Task_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_1"/>
+    <bpmn:startEvent name="" id="StartNoneEvent_0">
+      <bpmn:outgoing>SequenceFlow_0</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Deregister" id="Task_0">
+      <bpmn:incoming>SequenceFlow_0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_0">
+      <bpmn:incoming>SequenceFlow_3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:intermediateThrowEvent name="" id="IntermediateMessageEventThrowing_0">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_0">
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_3</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_1" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_1" name="">
+        <bpmn:flowNodeRef>StartMessageEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_2</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="IntermediateMessageEventCatching_0" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="StartNoneEvent_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_4" targetRef="EndNoneEvent_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="Task_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="StartMessageEvent_0" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="Task_3" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Task_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_1"/>
+    <bpmn:startEvent name="" id="StartMessageEvent_0">
+      <bpmn:outgoing>SequenceFlow_10</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_0">
+      <bpmn:incoming>SequenceFlow_10</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_5</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_4</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Reject deregistration" id="Task_1">
+      <bpmn:incoming>SequenceFlow_4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Confirm deregistration preliminarily" id="Task_2">
+      <bpmn:incoming>SequenceFlow_5</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_1">
+      <bpmn:incoming>SequenceFlow_6</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task name="Assign GO as MSP" id="Task_3">
+      <bpmn:incoming>SequenceFlow_7</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_8</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Inform about the new assignment" id="Task_4">
+      <bpmn:incoming>SequenceFlow_8</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_2">
+      <bpmn:incoming>SequenceFlow_9</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+</bpmn:definitions>

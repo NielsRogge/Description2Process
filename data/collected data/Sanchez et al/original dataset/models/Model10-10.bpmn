@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="htpp://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:collaboration id="Collaboration_1">
+    <bpmn:participant id="Participant_0" name="MPO" processRef="Pool_0"/>
+    <bpmn:participant id="Participant_1" name="Fault Detector" processRef="Pool_1"/>
+    <bpmn:messageFlow id="MessageFlow_0" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:messageFlow id="MessageFlow_1" sourceRef="Task_7" targetRef="IntermediateMessageEventCatching_1"/>
+  </bpmn:collaboration>
+  <bpmn:process id="Pool_0" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_0" name="">
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>StartNoneEvent_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Exclusive_Databased_Gateway_3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_0</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_1" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_20" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_17" sourceRef="StartNoneEvent_1" targetRef="Task_9"/>
+    <bpmn:sequenceFlow id="SequenceFlow_13" sourceRef="Task_5" targetRef="Task_6"/>
+    <bpmn:sequenceFlow id="SequenceFlow_18" sourceRef="Task_9" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_14" sourceRef="Task_6" targetRef="Task_7"/>
+    <bpmn:sequenceFlow id="SequenceFlow_15" sourceRef="Task_7" targetRef="Task_8"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Exclusive_Databased_Gateway_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="Task_3" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="IntermediateMessageEventCatching_0" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_19" sourceRef="IntermediateMessageEventCatching_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_16" sourceRef="Task_8" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Exclusive_Databased_Gateway_1" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="Task_4" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="Exclusive_Databased_Gateway_3" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_2" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Exclusive_Databased_Gateway_1" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_0" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="StartNoneEvent_0" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_0">
+      <bpmn:incoming>SequenceFlow_6</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_0</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Reject failure report" id="Task_0">
+      <bpmn:incoming>SequenceFlow_0</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Confirm failure report" id="Task_1">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_1">
+      <bpmn:incoming>SequenceFlow_3</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_7</bpmn:outgoing>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Suspect fault" id="Task_2">
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent name="" id="StartNoneEvent_0">
+      <bpmn:outgoing>SequenceFlow_3</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_2">
+      <bpmn:incoming>SequenceFlow_8</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_4</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_5</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task name="Examine failure report" id="Task_3">
+      <bpmn:incoming>SequenceFlow_5</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway name="" id="Exclusive_Databased_Gateway_3">
+      <bpmn:incoming>SequenceFlow_9</bpmn:incoming>
+      <bpmn:incoming>SequenceFlow_10</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_11</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_0">
+      <bpmn:incoming>SequenceFlow_7</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_8</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:task name="Inform the GO about the failure" id="Task_4">
+      <bpmn:incoming>SequenceFlow_11</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_12</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Inform the MSP about the failure" id="Task_5">
+      <bpmn:incoming>SequenceFlow_12</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_13</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Repair the fault" id="Task_6">
+      <bpmn:incoming>SequenceFlow_13</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_14</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Inform about the results of the repair of the fault" id="Task_7">
+      <bpmn:incoming>SequenceFlow_14</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_15</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task name="Inform about the resolution of the inference" id="Task_8">
+      <bpmn:incoming>SequenceFlow_15</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_16</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent name="" id="EndNoneEvent_0">
+      <bpmn:incoming>SequenceFlow_16</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+  <bpmn:process id="Pool_1" isExecutable="false">
+    <bpmn:laneSet>
+      <bpmn:lane id="Lane_1" name="">
+        <bpmn:flowNodeRef>StartNoneEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventThrowing_0</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>IntermediateMessageEventCatching_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndNoneEvent_1</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:sequenceFlow id="SequenceFlow_9" sourceRef="Task_1" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_20" sourceRef="IntermediateMessageEventThrowing_0" targetRef="IntermediateMessageEventCatching_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_17" sourceRef="StartNoneEvent_1" targetRef="Task_9"/>
+    <bpmn:sequenceFlow id="SequenceFlow_13" sourceRef="Task_5" targetRef="Task_6"/>
+    <bpmn:sequenceFlow id="SequenceFlow_18" sourceRef="Task_9" targetRef="IntermediateMessageEventThrowing_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_14" sourceRef="Task_6" targetRef="Task_7"/>
+    <bpmn:sequenceFlow id="SequenceFlow_15" sourceRef="Task_7" targetRef="Task_8"/>
+    <bpmn:sequenceFlow id="SequenceFlow_0" sourceRef="Exclusive_Databased_Gateway_0" targetRef="Task_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_5" sourceRef="Exclusive_Databased_Gateway_2" targetRef="Task_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_6" sourceRef="Task_3" targetRef="Exclusive_Databased_Gateway_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_8" sourceRef="IntermediateMessageEventCatching_0" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_19" sourceRef="IntermediateMessageEventCatching_1" targetRef="EndNoneEvent_1"/>
+    <bpmn:sequenceFlow id="SequenceFlow_16" sourceRef="Task_8" targetRef="EndNoneEvent_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_7" sourceRef="Exclusive_Databased_Gateway_1" targetRef="IntermediateMessageEventCatching_0"/>
+    <bpmn:sequenceFlow id="SequenceFlow_12" sourceRef="Task_4" targetRef="Task_5"/>
+    <bpmn:sequenceFlow id="SequenceFlow_11" sourceRef="Exclusive_Databased_Gateway_3" targetRef="Task_4"/>
+    <bpmn:sequenceFlow id="SequenceFlow_4" sourceRef="Task_2" targetRef="Exclusive_Databased_Gateway_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Exclusive_Databased_Gateway_1" targetRef="Task_2"/>
+    <bpmn:sequenceFlow id="SequenceFlow_10" sourceRef="Task_0" targetRef="Exclusive_Databased_Gateway_3"/>
+    <bpmn:sequenceFlow id="SequenceFlow_3" sourceRef="StartNoneEvent_0" targetRef="Exclusive_Databased_Gateway_1"/>
+    <bpmn:startEvent name="" id="StartNoneEvent_1">
+      <bpmn:outgoing>SequenceFlow_17</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task name="Report failure" id="Task_9">
+      <bpmn:incoming>SequenceFlow_17</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_18</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:intermediateThrowEvent name="" id="IntermediateMessageEventThrowing_0">
+      <bpmn:incoming>SequenceFlow_18</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_20</bpmn:outgoing>
+    </bpmn:intermediateThrowEvent>
+    <bpmn:intermediateCatchEvent name="" id="IntermediateMessageEventCatching_1">
+      <bpmn:incoming>SequenceFlow_20</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_19</bpmn:outgoing>
+    </bpmn:intermediateCatchEvent>
+    <bpmn:endEvent name="" id="EndNoneEvent_1">
+      <bpmn:incoming>SequenceFlow_19</bpmn:incoming>
+    </bpmn:endEvent>
+  </bpmn:process>
+</bpmn:definitions>
