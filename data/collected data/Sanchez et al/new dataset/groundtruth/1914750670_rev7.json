@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    "ExclusiveGateway_0k8cxqi",
+    "ExclusiveGateway_1vmg9oh",
+    "IntermediateCatchEvent_1con7gd",
+    "IntermediateCatchEvent_1w2fukj",
+    "StartEvent_0fe909b",
+    "StartEvent_1hmmv8n",
+    "Task_0pwytv1",
+    "Task_0s5zq5e",
+    "Task_13faokg",
+    "Task_14633e9",
+    "Task_14pc38x",
+    "Task_1546mo3",
+    "Task_1se77ry"
+  ],
+  "num-sentences": 10,
+  "alignment": {
+    "Task_14633e9": 2,
+    "Task_1546mo3": 4,
+    "IntermediateCatchEvent_1con7gd": 8,
+    "Task_1se77ry": 2,
+    "Task_14pc38x": 2,
+    "StartEvent_0fe909b": 6,
+    "StartEvent_1hmmv8n": 3,
+    "Task_0s5zq5e": 4,
+    "IntermediateCatchEvent_1w2fukj": 9,
+    "ExclusiveGateway_1vmg9oh": 9,
+    "Task_13faokg": 9,
+    "ExclusiveGateway_0k8cxqi": 7,
+    "Task_0pwytv1": 6
+  },
+  "errors": null
+}
