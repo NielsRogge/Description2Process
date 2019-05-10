@@ -8,18 +8,20 @@ import numpy as np
 import pickle
 import requests, zipfile, io
 import urllib
+import os
 
 ## -- Set-up environment
 #-----------------------
 
 # We need to enable eager execution for inference at the end of this notebook.
+"""
 tfe = tf.contrib.eager
 tfe.enable_eager_execution()
 
 TFVERSION='1.13'
 import os
 os.environ['TFVERSION'] = TFVERSION
-
+"""
 # -- Download and unzip file to build model
 def download_model():
     url = "https://www.dropbox.com/s/ucjup5di19xwelz/description2process.zip?dl=1"
@@ -475,5 +477,5 @@ def structured2xml(text):
     decoded_text = decode_tokenizer(out_int, tk).strip()
     # Check if predition is in xml format
     xml_checked = xml_check(decoded_text)
-    
+
     return decoded_text
