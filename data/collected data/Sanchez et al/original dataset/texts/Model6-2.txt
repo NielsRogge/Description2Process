@@ -1,0 +1,9 @@
+The process starts periodically on the first of each month, when Assembler AG places an order with the supplier in order to request more product parts. 
+
+a) Assembler AG sends the order to the supplier. 
+
+b) The supplier processes the order. 
+
+c) The supplier sends an invoice to Assembler AG. 
+
+d) Assembler AG receives the invoice.

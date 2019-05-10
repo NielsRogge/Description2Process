@@ -1,0 +1,11 @@
+When a visitor wants to become a member of Barcelona's ZooClub, the following steps must be taken.
+First of all, the customer must decide whether he wants an individual or family membership.
+If he wants an individual membership, he must prepare his personal information.
+If he wants a family membership instead, he should prepare the information for its spouse and spawn as well.
+The customer must then give this information to the ZooClub department.
+The ZooClub department introduces the visitor's personal data into the system and takes the payment request to the Billing department.
+The ZooClub department also forwards the visitor's information to the marketing department.
+The billing department sends the payment request to the bank.
+The bank processes the payment information and, if everything is correct, charges the payment into user's account.
+Once the payment is confirmed, the ZooClub department can print the card and deliver it to the visitor.
+In the meantime, the Marketing department makes a request to mail the Zoo Club's magazine to the visitor's home. Once the visitor receives the card, he can go home.

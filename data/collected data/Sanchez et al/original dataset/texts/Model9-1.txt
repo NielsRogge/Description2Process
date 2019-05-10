@@ -1,0 +1,6 @@
+Every weekday morning, the database is backed up and then it is checked to see whether the Account Defaulters table has new records. 
+If no new records are found, then the process should check the CRM system to see whether new returns have been filed.
+ If new returns exist, then register all defaulting accounts and customers. 
+ If the defaulting client codes have not been previously advised, produce another table of defaulting accounts and send to account management.
+ All of this must be completed by 2:30 pm, if it is not, then an alert should be sent to the supervisor.
+  Once the new defaulting account report has been completed, check the CRM system to see whether new returns have been filed. If new returns have been filed, reconcile with the existing account defaulters table. This must be completed by 4:00 pm otherwise a supervisor should be sent a message.

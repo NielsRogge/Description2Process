@@ -1,0 +1,1 @@
+The MSPN sents a dismissal to the MSPO. The MSPO reviews the dismissal. The MSPO rejects the dismissal of the MSPN or The MSPO confirms the dismissal of the MSPN.
