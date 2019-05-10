@@ -1,0 +1,8 @@
+The process starts when the admin office in SSP receives the invoice, the admin office then sorts the invoice per client, sorts the invoice per vendor, attaches invoice entry form to invoice, enters required info on the invoice entry form, and checks the completeness of the invoice after the client has completed the invoice.
+If the invoice is not completed a message is sent and the process finishes.
+Otherwise, if the invoice is complete, the admin office enters the info for the SLA and checks the priority.
+If the invoice has high priority, the admin office applies the red stamp on entry invoice.
+Afterwards, the admin office checks the invoice compliance.
+If the invoice is complete the admin office allocates invoice to DEO.
+Otherwise, if the invoice is not complete, the admin office can either send it to experience staff who should process the non-compliance invoice, call the client and request for information, or send a postal mail requesting the information complete; in this case a reminder is sent to the client after 10 hours.
+Finally, when the missing information are obtained the admin office can allocate invoice to DEO. 

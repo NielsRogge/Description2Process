@@ -1,0 +1,6 @@
+In ACME Inc. the process of purchase order-to-delivery is started by the financial department.
+They check the purchase invoice and then sends it to the department.
+The department checks the invoice for factual correctness and registers this in the SAPERION workflow system.
+After this, a check is performed to see if the amount purchased is over $500 or under $500.
+If it is over $500 the invoice is sent to the department head who then uses the SAPERION workflow to approve the invoice.
+Once this has been done, or if the amount of the order is under $500 the ERP system is triggered for payment and the process ends.

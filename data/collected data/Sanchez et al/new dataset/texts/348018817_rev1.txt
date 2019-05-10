@@ -1,0 +1,13 @@
+As soon as an employee files an expense report the process is started.
+Once the expense report is received a check is performed to make sure the employee has an account.
+If this check does not take place within 28 days, the process is stopped and the employee is sent a “resubmit” email.
+When the employee has an account the report is reviewed.
+If the employee does not have an account, an account is created after which the report is reviewed.
+A check is performed to see if the amount of the expense exceeds 200.
+If it does not exceed 200, the employee is reimbursed through a deposit directly to the employee’s bank account and the process is ended.
+In the case that it does exceed 200, a supervisor is asked for approval.
+Three things can happen after this.
+First, the supervisor approves within 7 days, this will result in the deposit of the reimbursement directly to the employee’s bank account.
+Once this is done the process is ended.
+Second, the supervisor rejects within 7 days, as a result the employee receives a notification through email that the request has been rejected.
+Third, if it takes the supervisor more than 7 days to respond, an email is sent to the employee informing him/her that the approval is in progress and the part of the processes after a supervisor is asked for approval is repeated.

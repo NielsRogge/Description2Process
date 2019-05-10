@@ -1,0 +1,8 @@
+The process starts with an informational meeting among the web design team.
+If this meeting is not successful, the process ends here.
+Otherwise, the team starts by creating a storyboard.
+After an agreement on the storyboard, part of the team starts working on the design and development of the website.
+Simultaneously, the team will start to prepare an initial draft of the content.
+In case a review of the draft is needed, the marketing team will conduct this, before the web design team creates the final version of the content.
+When the development and content have been completed, the website will be built and reviewed.
+If the site is approved, the process is completed, otherwise the team goes back to the building step.

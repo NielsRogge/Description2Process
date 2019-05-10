@@ -1,0 +1,7 @@
+The process starts with the Provision Team receiving a request from a Customer.
+First, the team has to identify the necessary parts.
+If the team has any question about the request, they may ask for more information to the customer.
+Afterwards, the team needs to check if all parts are available.
+If available, they are supplied to the customer.
+Otherwise, the team must record the petition, make an order to Daisuki, and contact the customer once the team collects all parts.
+After the items are recollected by the customer, the final payment is received. 

@@ -1,0 +1,11 @@
+The process starts by reviewing the order.
+The staff should check if all the requested items are available.
+If something is missing, the staff has to inform customer about a potential delay and order the missing products.
+In the exceptional case of a discontinued item, the customer should be informed about the not longer available items.
+After waiting an average of x days for the delivery, the staff should check again if all products are on store.
+If everything is OK, then the staff recollects all products and prepare a package.
+The courier is then informed about the pre-processed package.
+The courier company informs the client about a potential delay until there are enough human resources to process the delivery.
+Then, the package is picked up by the designed driver.
+A centralized service decides the best route to deliver all driver's packages.
+Once the driver delivers the package, she should update the system so all stakeholders are notified.

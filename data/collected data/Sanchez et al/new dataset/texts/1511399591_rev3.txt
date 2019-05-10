@@ -1,0 +1,6 @@
+The process starts with the business analyst collecting data and conducting business analysis regarding customer feedback, then the web designer integrates the design and decides where the customer feedback module should be placed.
+The business analyst waits until the design is complete, then she checks the design and provides feedback.
+If the design needs adjustment the web designer has to change the design and integrates the design and decides where the customer feedback module should be placed, again.
+If the design is OK.
+The PHP/HTML/CSS specialist integrates with the overall implementation, and then the tester tests the final website to make sure everything is going well.
+If the test is OK, the process ends, otherwise if the test is not ok the tester provides test results to the PHP/HTML/CSS specialist who adjusts according to the test results, and integrates the overall implementation, again.

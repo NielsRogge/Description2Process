@@ -1,0 +1,10 @@
+In a certain company an Invoice process is started.
+First the Vendor is tried to be located into the SAP system of the company.
+If it is not possible to find it a sub-process to record this new Vendor is started.
+The request for this new Vendor Record starts with the filling of the new Vendor Master Record form.
+After this, the request is attached to the invoice and then putted in an internal outbox for new vendors.
+Before the request is finished it is classified in urgent and non-urgent invoices.
+Whenever the Invoice is urgent this Request has a maximum 24 hr window to be finished, while if it is non-urgent it has a 1-5 working days time to be done.
+If the Vendor is already in the system or the request for new Vendor Record has finished, its SAP number is then added to the invoice and the process continues.
+The invoices can be sorted in two ways: by amount and by vendor.
+The invoices are then entered in the SAP system and the process is finished.

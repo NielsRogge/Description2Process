@@ -1,0 +1,9 @@
+In the process of reward and training, first, the management checks the employee performance.
+If the performance is less than 20%, the management suggests the employee’s dismissal to the human resources department (HR).
+Then, the HR dismisses the employee.
+If the employee performance is greater than 20% but less than 50%, the management will suggest training, which in turn is provided by HR.
+If the performance exceeds 75%, the management suggests the employee for reward.
+There may be either a financial reward or an other benefit.
+Regarding the latter, the management chooses an appropriate benefit.
+The financial reward is calculated and payed by the finance departement.
+Finally, the management announces the rewarded employee as employee of the month.

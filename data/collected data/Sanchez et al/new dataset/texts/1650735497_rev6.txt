@@ -1,0 +1,11 @@
+A PayPal client wants to pay with bank account and has selected this as payment option.
+For bank account addition, first, the PayPal client needs to enter all relevant bank details, i.e. first name, bank name, account type, BSB and account number, and click "continue".
+This submits the bank details to the PayPal system.
+After the bank details are submitted to the PayPal system, it makes two random deposits in the bank account.
+The PayPal system sends a message with this information to the client bank account.
+By this, the two deposits to the bank account are made.
+Then, after 3-5 working days it notifies the PayPal client to check his bank account for received deposits.
+The client may now log into his PayPal account, enter the amounts from the two deposits and click "verify".
+The PayPal system then checks its values against the values entered by the client.
+If the values match, the bank account is linked to the clients PayPal account and is considered as confirmed.
+If the values do not match, the bank account is removed from the PayPal system, i.e. it could not be confirmed.

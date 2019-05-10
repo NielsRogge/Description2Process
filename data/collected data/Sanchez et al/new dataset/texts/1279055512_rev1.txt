@@ -1,0 +1,6 @@
+Once the Mail Centre office of SSP receives an invoice from the client, it categorizes the invoice by staff member.
+Then, the invoice is forwarded to the Administration Department; this Department processes the Invoice (a complex process) and then puts all the invoices into a collection box.
+At 10 am every workday, the Data Entry office takes the invoices and enters all data in the SAP system, another complex process.
+Every hour the Mail Centre office reviews the system and forwards all new invoices for validation; the Validation office executes the big process of validating invoices.
+At the beginning of every week, the Payment office executes the payment of every validate invoice, this is another big process.
+After the payment, all invoices are archived by the Registry office.

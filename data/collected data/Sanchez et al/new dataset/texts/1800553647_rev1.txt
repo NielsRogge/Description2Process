@@ -1,0 +1,10 @@
+This process describes how purchases work at the ACME Inc company.
+A purchase is initiated by a demand identified within a department.
+If there are enough goods in stock to satisfy this demand, then they are consumed locally and no further action is required.
+Otherwise, the department defines which type of goods are needed and the necessary amounts and a purchase requisition is created in the ERP system.
+This purchase requisition is processed by the Central procurement department.
+First, the purchase requisition is checked on the ERP system to see whether the supplier information is available.
+If this is a new supplier, first it has to be created within the ERP system.
+Once it is created (or it if was already a known supplier), the purchase requisition is used to create an order template in the ERP system.
+The final step in the process is the approval of this order, which is granted by another role, called "approver".
+After receiving the new order template from the ERP system, he approves and triggers the purchase order.  

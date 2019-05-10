@@ -1,0 +1,8 @@
+A client who wants to create a Paypal account first needs to determine the desired account type.
+He should either select a personal account or a premium account.
+Afterwards, the client should enter login details, such as e-mail address and desired password, personal details, such as name and date of birth, as well as his telephone number and address.
+Finally, the client needs to declare if he has been affiliated with any politically exposed person.
+When the client clicks the create account button, the details will be sent to the Paypal system.
+When a request is received, the system will validate the input fields.
+If there are any invalid fields, the client will be notified and needs to correct them.
+Otherwise a welcome email will be generated and sent to indicate that an account has been created.

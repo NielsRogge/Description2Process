@@ -1,0 +1,10 @@
+The account creation process at this bank proceeds as follows.
+The first steps in the process are performed by the bank customer.
+After visiting the bank website, she fills in her personal data and generates a PDF document with all the information relevant to this account request.
+After printing this PDF, the customer needs to visit a post office to send these documents.
+The post officer will check the identity of the customer and mail the account to the bank.
+At the bank, the person in charge of making a decision on account requests is the bank officer.
+Once he receives a new request, he'll check the customer data.
+Depending on the available information and his own criteria, he may either accept or reject the request.
+In the former case, he will mail the account documents to the customer.
+In the latter, he will mail a letter of refusal. 

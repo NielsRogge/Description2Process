@@ -1,0 +1,5 @@
+The process starts when the IS is notified about a data validation error.
+The drop-off tech checks for typos.
+If this is not the case, the technician checks if the customer can correct the mistake.
+Otherwise, public sources are scoured for solutions.
+As soon as any check was passed, the issue is considered resolved.

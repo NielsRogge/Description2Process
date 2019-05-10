@@ -1,0 +1,5 @@
+In the process of adding a credit card for an internet purchase after choosing to pay with credit card the user has to put his credit card details, after that the billing address is checked.
+If it is incorrect the process goes back to the user so that it can be modified, if it is correct the process continues.
+Afterwards the user needs to click in the continue button to move forward.
+The Credit Card is then verified by the Credit Card Authority.
+The result is then checked and if it is validated the credit card is added, if not the addition is cancelled.

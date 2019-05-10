@@ -1,0 +1,4 @@
+At the end of every week, the Payment Office of SSP generates a payment report and then pays the vendor.
+This payment report is sent automatically to clients (including the payment invoice), also the payment office must send the payment report to both the Registry office and to the Accounts Receivable Department.
+The Accounts Receivable Department generates the monthly invoice for clients, and then charges $35 per invoice notifying the client.
+The Registry office selects the paper-based invoices that have been paid in order to archive the invoices per vendor and then per payment data; also, this office tracks down the payment. 

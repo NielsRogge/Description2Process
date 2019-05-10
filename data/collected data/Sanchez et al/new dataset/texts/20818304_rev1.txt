@@ -1,0 +1,12 @@
+The credit company receives the credit information from the customer, If the requested amount is greater than 1M$ an approval must be requested.
+If the requested amount is lower or equal to 1M$ the company assess the risk of the credit.
+After the assessment, if the risk is high, an approval must be requested; but if the risk is low the credit is accepted.
+After the approval request, the credit could be accepted or rejected; in both cases, an email is sent to the customer. 
+The credit company collects the credit information from the customer, If the requested amount is greater than 1M$ an approval must be requested.
+If the requested amount is lower or equal to 1M$ the company assess the risk of the credit.
+After the assessment, if the risk is high, an approval must be requested; but if the risk is low the credit is accepted.
+After the approval request, the credit could be accepted or rejected; in both cases, an email is sent to the customer.
+The credit company collects the credit information from the customer, If the requested amount is lower or equal to 1M$ the company assess the risk of the credit.
+After the assessment, if the risk is low the credit is accepted.
+If the requested amount is greater than 1M$ or the risk of the credit is high, an approval must be requested.
+After the approval request, the credit could be accepted or rejected; in both cases, an email is sent to the customer.

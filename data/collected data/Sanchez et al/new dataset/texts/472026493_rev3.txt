@@ -1,0 +1,14 @@
+The process of buying new hardware is started as soon as a request for new hardware is received by the IT department.
+The next step is for the IT department to analyse the request and either approve or deny it.
+If it is denied, the employee is informed via email about the denial and the process is ended.
+However, if the request is approved it is edited and completed.
+Then an email is sent to the supplier asking about prices.
+Then the supplier replies to the email by sending an offer for the requested items.
+Once this offer is received, a form is filled in and sent to the management.
+The management then analyses the request and decides if it is approved or not.
+In the former case, the offer is forwarded to the financial department and back to the IT department.
+The financial department finds resources while the IT department prepares an order and sends this to the supplier.
+When this is accepted and the financial resources are found the hardware is received by the IT department.
+After which the financial department will take care of the invoice and the processes is ended.
+In the scenario where the management does not approve the request it can send the request back to the IT department for rework, then the IT department has to go back to editing and completing a request.
+If the management does not approve the request it can also decide to deny the request after which the process is ended.

@@ -1,0 +1,4 @@
+If a not collected bag is identified, CVS must check the number of resolution retries conducted.
+If the number of retries is greater than an specified number, the bag must be returned to the production area for disassemble; in all other cases, CVS must try to contact the customer by phone and remind to pick up the bag.
+If the contact is successful and the customer withdrawn the order, the bag must be returned to the production area for disassemble, but if it is successful and the customer promises to pick up the bag, CVS must increase the retry count on the bag label.
+Also, this number must be increased if the contact is unsuccessful. 

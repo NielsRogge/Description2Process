@@ -1,0 +1,8 @@
+An order to cash process starts when a customer order is received.
+After the order has been processed, it is send to the warehouse.
+The warehouse employees determine the parts required to produce the requested items.
+If any parts are not available in the warehouse, these are ordered.
+Once all necessary parts are available, production will start.
+After production, quality checks will be performed.
+If the production process has finished, products will be packaged and labeled, before returning to the warehouse.
+Finally, sales will be informed about the completed production and the product can be sold to the customer.

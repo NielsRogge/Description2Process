@@ -1,0 +1,5 @@
+The process starts when the SO: Angebot/Auftrag receives a subsidiary order.
+The SO: Angebot/Auftrag prepares goods for shipment and then ships the goods, concurrently with preparing the goods and shipping them, the SO: Angebot/Auftrag prepares invoicing.
+In case the customer is subsidiary and the subsidiary relationship is not yet modeled, SO: Address- management adds parent company as invoicing address, then the SO: Angebot/Auftrag create the invoice.
+Otherwise if the customer is independent or the subsidiary relationship is already modeled in ERP, the SO: Angebot/Auftrag directly creates the invoice.
+Finally, the SO: Angebot/Auftrag sends the invoice.

@@ -1,0 +1,6 @@
+The process starts with a visitor filling out a registration-form.
+The availability of products and the credit rating is checked first.
+If the credit rating is higher than 9000 (according to Schufa) the registration is called unsuccessful.
+If not the interim customer dataset record is created.
+After this two sub-processes starts in parallel: Device provision and Register customer account at ISP nodes.
+Once these sub-processes are finished a welcome package is created and sent to the customer to alert them that the registration process was completed successfully. 

@@ -1,0 +1,11 @@
+The reimbursement process within the ERICS company is started as soon as a reimbursement request is received.
+After receiving the request a reimbursement contact is created.
+Afterwards a beneficiary is chosen.
+Then, a refund period is contract duration is determined.
+Once this has been completed a check is done to see if a customer is part of a "Verband" or only has normal subsidiaries.
+In the former case, the customer group association is selected.
+In the latter case, customers are selected manually.
+Once either of these two activities have been completed a threshold is set.
+Once the refund period has ended, a credit note is printed and sent to the customer.
+In the meanwhile a reimbursement is calculated and paid to the customer.
+Once the payment has been made and the notification to the customer has been sent, the process ends.
