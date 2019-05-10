@@ -3,7 +3,6 @@ from tensorflow.contrib import predictor
 import tensorflow as tf
 import os, sys
 import requests, zipfile, io
-import pandas as pd
 
 def download_model():
     url = "https://www.dropbox.com/s/iy3oxx4eq7107s7/USE_bis.zip?dl=1"
@@ -18,7 +17,7 @@ def get_model():
 download_model()
 classifier = get_model()
 
-def contains_activity(clause, classifier = classifier):
+def contains_activity(clause):
   content_tf_list = tf.train.BytesList(value=[clause.encode('utf-8')])
   clause = tf.train.Feature(bytes_list=content_tf_list)
   clause_dict = {'clause': clause}

@@ -1,3 +1,14 @@
+import tensorflow as tf
+
+# We need to enable eager execution for inference at the end of this notebook.
+tfe = tf.contrib.eager
+tfe.enable_eager_execution()
+
+TFVERSION='1.13'
+import os
+os.environ['TFVERSION'] = TFVERSION
+
+
 # Import library
 from description2process import data_generation
 from description2process import contraction_expansion

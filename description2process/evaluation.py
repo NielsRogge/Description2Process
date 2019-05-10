@@ -115,6 +115,81 @@ def get_score_order_activities(activities_prediction, activities_solution):
   # Compute and return BLEU score between both lists
   return sentence_bleu([activities_solution], list_act, weights = (0,1,0,0))
 
+def get_well_formed_xml(xml):
+  list_pred = xml.split()
+  i = 0
+
+  tag_act = False
+  tag_path1 = False
+  tag_path2 = False
+  tag_path3 = False
+  while i < len(list_pred) :
+    word = list_pred[i]
+
+    # check if all activities are closed when new tag is opened or path closed
+    if word in ['<act>','<path1>','<path2>','<path3>', '</path1>','</path2>','</path3>'] and tag_act :
+      list_pred.insert(i, '</act>')
+      tag_act = False
+      i = i+1
+
+    # check if all path1 is closed before opening new path
+    if word in ['<path1>','<path2>','<path3>'] and tag_path1 :
+      list_pred.insert(i, '</path1>')
+      tag_path1 = False
+      i = i+1
+
+    if word in ['<path1>','<path2>','<path3>'] and tag_path2 :
+      list_pred.insert(i, '</path2>')
+      tag_path2 = False
+      i = i+1
+
+    if word in ['<path1>','<path2>','<path3>'] and tag_path3 :
+      list_pred.insert(i, '</path3>')
+      tag_path3 = False
+      i = i+1
+
+    # Navigate xml string
+    if word == '<act>':
+      tag_act = True
+    elif word == '</act>':
+      tag_act = False
+    elif word == '<path1>':
+      tag_path1 = True
+    elif word == '</path1>':
+      tag_path1 = False
+    elif word == '<path2>':
+      tag_path2 = True
+    elif word == '</path2>':
+      tag_path2 = False
+    elif word == '<path3>':
+      tag_path3 = True
+    elif word == '</path3>':
+      tag_path3 = False
+    else :
+      pass
+
+    i = i+1
+
+  # Check if all tags are properly closed
+  if tag_act or tag_path1 or tag_path2 or tag_path3:
+    if tag_act :
+      list_pred.append('</act>')
+      tag_act = False
+
+    if tag_path1 :
+      list_pred.append('</path1>')
+      tag_path1 = False
+
+    if tag_path2 :
+      list_pred.append('</path2>')
+      tag_path2 = False
+
+    if tag_path3 :
+      list_pred.append('</path3>')
+      tag_path3 = False
+
+  return ' '.join(list_pred)
+  
 # -- Main fucntion
 #-----------------
 
@@ -123,7 +198,7 @@ def get_evaluation(prediction, solution):
   try:
     tree_prediction = ET.fromstring("""<?xml version="1.0"?> <data> """ + prediction.strip() + " </data>")
   except:
-    prediction = xml_model.get_well_formed_xml(prediction)
+    prediction = get_well_formed_xml(prediction)
     tree_prediction = ET.fromstring("""<?xml version="1.0"?> <data> """ + prediction.strip() + " </data>")
 
   tree_solution = ET.fromstring("""<?xml version="1.0"?> <data> """ + solution.strip() + " </data>")
