@@ -19,6 +19,7 @@ from description2process import activity_extraction
 from description2process import structured_description
 from description2process import xml_model
 from description2process import visualization
+from description2process import evaluation
 
 # Returns the visualisation of a process description
 # INPUT: process description in string format
