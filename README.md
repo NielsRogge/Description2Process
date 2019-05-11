@@ -120,8 +120,9 @@ print(image)
 ```
 
 ### Evaluation of generated XML format 
-To compare the generated XML format to the reference solution, one can compute 4 performance metrics (as mentioned in the paper) as follows:
+To compare the generated XML format to the reference solution, one can compute the 4 performance metrics mentioned in the paper. The evaluation is available as a separate module, as shown below: 
 ```
+from description2process import evaluation
 score_activities, score_branches, score_bleu_tags, score_bleu_act = d2p.evaluation.get_evaluation(xml, solution)
 
 print("Score number of activities: {0:.0%}".format( round( score_activities, 4) ) ) 
