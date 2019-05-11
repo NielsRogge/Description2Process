@@ -22,7 +22,7 @@ pip install benepar
 pip install allennlp
 ```
 
-To install the library, simply do
+Next, one can install the library as follows:
 ```
 pip install description2process
 ```
