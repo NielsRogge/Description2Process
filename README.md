@@ -128,7 +128,7 @@ score_activities, score_branches, score_bleu_tags, score_bleu_act = d2p.evaluati
 print("Score number of activities: {0:.0%}".format( round( score_activities, 4) ) ) 
 print("Score number of branches: {0:.0%}".format( round( score_branches, 4 ) ) ) 
 print("BLEU score on tags: {0:.0%}".format(round( score_bleu_tags), 4 ) ) 
-print("BLEU score on actvities: {0:.0%}".format(round( score_bleu_act), 4 ) )  
+print("BLEU score on activities: {0:.0%}".format(round( score_bleu_act), 4 ) )  
 ```
 
 
