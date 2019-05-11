@@ -1,5 +1,5 @@
 # Description2Process
-This repository includes all data as well as source code of the paper "On the Applicability of Deep Learning to construct Process Models from Natural Text", written by Devos Simeon and Rogge Niels. Besides that, there is an interactive notebook that allows the user to use and test all functionality at once. 
+This repository includes all data as well as source code of the paper "On the Applicability of Deep Learning to construct Process Models from Natural Text", written by Simeon Devos and Niels Rogge (2019). Besides that, there is an interactive notebook that allows the user to use and test all functionality at once. 
 
 The proposed methodology consists of an **NLP pipeline** that transforms a textual description into a process model in an XML format, which eventually can be mapped to an image that is roughly based on BPMN. The NLP pipeline consists of 8 sequential steps (of which steps 2, 3, 4, 5 and 7 use deep learning):
 
