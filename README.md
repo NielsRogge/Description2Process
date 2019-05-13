@@ -113,7 +113,7 @@ Finally, the generated XML format can be mapped to an image (graph) as follows:
 image = d2p.visualization.xml2model(xml)
 image
 ```
-Note that one can also visualize the reference solution:
+In case a reference solution was specified, one can also visualize it for comparison with the generated solution:
 ```
 image = d2p.visualization.xml2model(solution)
 image
