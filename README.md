@@ -101,7 +101,7 @@ print(structured_description)
 ```
 
 ### Transformation of semi-structured description to XML format
-Next, a Transformer model can be called to translate the semi-structured description to a complete XML format that represents the process model. If appropriate, the model should add <path> and </path> tags to passages describing splits and merges. The Transformer model can be called as follows:
+Next, a Transformer model can be called to translate the semi-structured description to a complete XML format that represents the process model. If appropriate, the model should add <path> and </path> tags to passages describing splits and merges. The Transformer model can be called as shown below. Currently, this function also prints log information regarding the Transformer model. 
 ```
 xml = d2p.xml_model.structured2xml(structured_description)
 print(xml)
@@ -111,12 +111,12 @@ print(xml)
 Finally, the generated XML format can be mapped to an image (graph) as follows:
 ```
 image = d2p.visualization.xml2model(xml)
-print(image)
+image
 ```
 Note that one can also visualize the reference solution:
 ```
 image = d2p.visualization.xml2model(solution)
-print(image)
+image
 ```
 
 ### Evaluation of generated XML format 
