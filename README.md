@@ -94,7 +94,7 @@ print(extracted_activities_df)
 ```  
 
 ### Construction of semi-structured description
-Next, one can construct a semi-structured description, which replaces the clauses that contained an activity from the original description (cleaned during the contraction expansion and coreference resolution steps) by their extracted activities, surrounded by \<act> and \</act> tags. This can be done as follows:
+Next, one can construct a semi-structured description based on the original description, cleaned during the contraction expansion and coreference resolution steps. This step replaces the clauses that contained an activity (obtained in the activity recognition step) by their extracted activities (obtained in the activity extraction step), surrounded by \<act> and \</act> tags. This can be done as follows:
 ```
 structured_description = d2p.structured_description.get_structured_description(description, extracted_activities_df)
 print(structured_description)
