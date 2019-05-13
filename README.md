@@ -66,7 +66,7 @@ print(description)
 ```
 
 ### Coreference resolution 
-Subsequently, coreference resolution can be performed, resolving references like "he", "she" and "it". This can be done as follows:
+Subsequently, coreference resolution can be performed. As mentioned in the paper, only coreferences are resolved for the words "he", "she" and "it". This can be done as follows:
 ```
 description = d2p.coreference_resolution.resolve_coreferences(description)
 print(description)
