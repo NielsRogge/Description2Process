@@ -15,9 +15,10 @@ The proposed methodology consists of an **NLP pipeline** that transforms a textu
 Textual inputs are limited to sequences of activities and 2 types of XOR splits, as described in the paper.
 
 ## Installation 
-The project requires Python 3. First, 3 libraries need to be installed that do not (yet) install automatically with the 'description2process' library: 
+The project requires Python 3. First, 4 libraries need to be installed that do not (yet) install automatically with the 'description2process' library: 
 ```
-pip install neuralcoref
+pip install spacy==2.1.3
+pip install neuralcoref==4.0
 pip install benepar
 pip install allennlp
 ```
